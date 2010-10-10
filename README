@@ -1,0 +1,27 @@
+Design Goals
+
+ * PCB easily to manufacture on a RepRap.
+ * All parts on one board. Except for the Opto Endstops, of course.
+ * Enough components to run a Mendel or Huxley with extruder and heated bed.
+ * Easy to set up. For example, this would include an USB port.
+ * Well available and cheap parts.
+ * Based on the ATmega644.
+ * Well suited for community driven development. 
+
+Features
+
+ * Single board solution.
+ * Single sided PCB.
+ * Pololu stepper drivers, exchangeable.
+ * 4x stepper motor drivers with 1/16 microstepping.
+ * TODO: on-board USB-RS232 converter.
+ * Integrated hardware for driving one extruder (stepper, heater and thermistor).
+ * Integrated hardware for a heated bed (heater, thermistor).
+ * Integrated hardware for driving a fan.
+ * Ready to be hooked up on a generic PC power supply unit (PSU).
+ * Use of standard connectors.
+ * Debug LEDs for power, Fan and both heater outputs.
+ * Can turn PSU on and off in software.
+ * Reset button. 
+
+For more details, see http://reprap.org/wiki/Generation_7_Electronics

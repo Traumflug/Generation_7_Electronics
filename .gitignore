@@ -1,9 +1,9 @@
 *~
-*.pcb-
+*-
 
 *.cmd
 *.net
 *.new.pcb
 *.bak
-*.bak0
+*.bak?
 

@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Sun Oct 10 03:26:07 2010
+# date:    Sun Oct 17 19:45:01 2010
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -13,8 +13,8 @@ Cursor[0 0 6.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[1575 1000 1969 1000 1500 1000]
-Flags("showdrc,rubberband,nameonpcb,snappin")
-Groups("1,2,3:4,5,6:s:c")
+Flags("showdrc,nameonpcb,snappin")
+Groups("1,2,3,s:4,5,6,c")
 Styles["Signal,2000,6000,3000,1600:Power,5000,9500,7000,1000:Fat,5000,9500,7000,1600:Skinny,7874,7874,3937,1575"]
 
 Symbol(' ' 18)

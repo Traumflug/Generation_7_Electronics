@@ -22,7 +22,7 @@ description=Optical Interrupter Switch
 C 40700 45700 1 0 0 H21LOB-1.sym
 {
 T 42200 46050 5 10 1 1 0 5 1
-devicename=H21LOB
+device=H21LOB
 T 42200 48150 5 10 1 1 0 3 1
 refdes=U1
 T 42200 48300 5 10 0 0 0 3 1
@@ -30,37 +30,37 @@ footprint=H21L-1
 }
 C 45400 49200 1 90 0 led-3.sym
 {
-T 44750 50150 5 10 0 0 90 0 1
-device=LED
 T 44850 49550 5 10 1 1 90 0 1
 refdes=LED1
+T 45400 49200 5 10 0 0 0 0 1
+footprint=LED 60
 }
 C 45300 48100 1 90 0 resistor-2.sym
 {
-T 44950 48500 5 10 0 0 90 0 1
-device=RESISTOR
 T 45000 48300 5 10 1 1 90 0 1
 refdes=R3
 T 45300 48400 5 10 1 1 90 0 1
 value=1K
+T 45300 48100 5 10 0 0 0 0 1
+footprint=ACY300
 }
 C 43800 45600 1 0 0 resistor-2.sym
 {
-T 44200 45950 5 10 0 0 0 0 1
-device=RESISTOR
 T 44000 45900 5 10 1 1 0 0 1
 refdes=R1
 T 44000 45600 5 10 1 1 0 0 1
 value=10K
+T 43800 45600 5 10 0 0 0 0 1
+footprint=ACY300
 }
 C 43800 47800 1 0 0 resistor-2.sym
 {
-T 44200 48150 5 10 0 0 0 0 1
-device=RESISTOR
 T 44000 48100 5 10 1 1 0 0 1
 refdes=R2
 T 44100 47800 5 10 1 1 0 0 1
 value=220
+T 43800 47800 5 10 0 0 0 0 1
+footprint=ACY300
 }
 C 45700 45700 1 0 0 gnd-1.sym
 C 45600 50400 1 0 0 vcc-1.sym
@@ -87,12 +87,12 @@ http://reprap.org/wiki/Generation_7_Electronics
 Derivative of Opto Endstop v2.1
 C 47700 46200 1 0 1 connector3-1.sym
 {
-T 45900 47100 5 10 0 0 0 6 1
-device=CONNECTOR_3
 T 47700 47300 5 10 1 1 0 6 1
 refdes=CONN1
 T 47200 46000 5 10 1 1 0 0 1
 device=22-23-2031
+T 47700 46200 5 10 0 0 0 0 1
+footprint=100-3-1
 }
 N 45800 47000 46000 47000 4
 N 45800 46400 46000 46400 4

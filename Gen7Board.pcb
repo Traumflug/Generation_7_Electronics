@@ -1,7 +1,7 @@
-# release: pcb 20080202
-# date:    Tue Oct 19 02:11:39 2010
-# user:    peer (Peer Janssen,,,)
-# host:    lxw3
+# release: pcb 20091103
+# date:    Sat Oct 30 15:25:00 2010
+# user:    mah (Markus Hitter,,,)
+# host:    piccard
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
@@ -2673,12 +2673,12 @@ NetList()
 		Connect("U4-10")
 		Connect("U5-5")
 		Connect("U5-10")
-		Connect("X_MAX-1")
-		Connect("X_MIN-1")
-		Connect("Y_MAX-1")
-		Connect("Y_MIN-1")
-		Connect("Z_MAX-1")
-		Connect("Z_MIN-1")
+		Connect("X_MAX-2")
+		Connect("X_MIN-2")
+		Connect("Y_MAX-2")
+		Connect("Y_MIN-2")
+		Connect("Z_MAX-2")
+		Connect("Z_MIN-2")
 	)
 	Net("+12V" "(unknown)")
 	(
@@ -2749,12 +2749,12 @@ NetList()
 		Connect("U4-15")
 		Connect("U5-9")
 		Connect("U5-15")
-		Connect("X_MAX-3")
-		Connect("X_MIN-3")
-		Connect("Y_MAX-3")
-		Connect("Y_MIN-3")
-		Connect("Z_MAX-3")
-		Connect("Z_MIN-3")
+		Connect("X_MAX-1")
+		Connect("X_MIN-1")
+		Connect("Y_MAX-1")
+		Connect("Y_MIN-1")
+		Connect("Z_MAX-1")
+		Connect("Z_MIN-1")
 	)
 	Net("unnamed_net1" "(unknown)")
 	(
@@ -2766,7 +2766,7 @@ NetList()
 	Net("unnamed_net2" "(unknown)")
 	(
 		Connect("U1-7")
-		Connect("X_MAX-2")
+		Connect("X_MAX-3")
 	)
 	Net("unnamed_net3" "(unknown)")
 	(
@@ -2782,22 +2782,22 @@ NetList()
 	Net("unnamed_net5" "(unknown)")
 	(
 		Connect("U1-3")
-		Connect("Z_MAX-2")
+		Connect("Z_MAX-3")
 	)
 	Net("unnamed_net6" "(unknown)")
 	(
 		Connect("U1-4")
-		Connect("Z_MIN-2")
+		Connect("Z_MIN-3")
 	)
 	Net("unnamed_net7" "(unknown)")
 	(
 		Connect("U1-5")
-		Connect("Y_MAX-2")
+		Connect("Y_MAX-3")
 	)
 	Net("unnamed_net8" "(unknown)")
 	(
 		Connect("U1-6")
-		Connect("Y_MIN-2")
+		Connect("Y_MIN-3")
 	)
 	Net("unnamed_net9" "(unknown)")
 	(
@@ -2807,7 +2807,7 @@ NetList()
 	Net("unnamed_net10" "(unknown)")
 	(
 		Connect("U1-8")
-		Connect("X_MIN-2")
+		Connect("X_MIN-3")
 	)
 	Net("unnamed_net11" "(unknown)")
 	(

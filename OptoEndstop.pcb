@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Mon Oct 18 17:19:39 2010
+# date:    Mon Nov  8 21:03:10 2010
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -8,13 +8,13 @@ FileVersion[20070407]
 
 PCB["Opto Endstop" 600000 500000]
 
-Grid[2500.000000 0 0 0]
+Grid[2500.000000 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[1600 1000 1000 100 1500 1000]
 Flags("nameonpcb,uniquename,clearnew,snappin")
-Groups("1,c:2,s")
+Groups("1,3,c:2,s")
 Styles["Signal,2000,6000,2000,1600:Power,4000,7000,4000,1600:Fat,6000,9000,6000,1600:Skinny,10000,13000,10000,1600"]
 
 Symbol(' ' 18)
@@ -927,10 +927,17 @@ Layer(2 "solder")
 	Line[135000 137500 137500 135000 2000 3200 "clearline"]
 	Line[145000 122500 140000 122500 2000 3200 "clearline"]
 )
-Layer(3 "silk")
+Layer(3 "outline")
 (
+	Line[120000 175000 220000 175000 2000 3200 "clearline"]
+	Line[220000 175000 220000 110000 2000 3200 "clearline"]
+	Line[220000 110000 120000 110000 2000 3200 "clearline"]
+	Line[120000 110000 120000 175000 2000 3200 "clearline"]
 )
 Layer(4 "silk")
+(
+)
+Layer(5 "silk")
 (
 	Text[155500 120500 0 66 "1K" ""]
 	Text[167500 130500 0 66 "10K" ""]

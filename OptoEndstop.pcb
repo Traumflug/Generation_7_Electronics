@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Mon Nov  8 21:03:10 2010
+# date:    Thu Dec  9 18:37:48 2010
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -887,7 +887,7 @@ Layer(1 "component")
 )
 Layer(2 "solder")
 (
-	Line[165000 115000 167500 115000 2000 3200 "clearline"]
+	Line[165000 115000 187500 115000 2000 3200 "clearline"]
 	Line[184175 167500 180000 167500 2000 3200 "clearline"]
 	Line[188500 131500 187500 132500 2000 3200 "clearline"]
 	Line[190000 152500 187500 150000 2000 3200 "clearline"]
@@ -900,9 +900,9 @@ Layer(2 "solder")
 	Line[140000 122500 135000 127500 2000 3200 "clearline"]
 	Line[175000 162500 175000 142500 2000 3200 "clearline"]
 	Line[177500 122500 187500 132500 2000 3200 "clearline"]
-	Line[201000 115000 207500 121500 2000 3200 "clearline"]
+	Line[145000 146675 155825 157500 2000 3200 "clearline"]
 	Line[182500 140000 157500 115000 2000 3200 "clearline"]
-	Line[206000 141500 195000 152500 2000 3200 "clearline"]
+	Line[145000 122500 140000 122500 2000 3200 "clearline"]
 	Line[175000 142500 165000 132500 2000 3200 "clearline"]
 	Line[180000 167500 175000 162500 2000 3200 "clearline"]
 	Line[155825 165825 135000 145000 2000 3200 "clearline"]
@@ -911,8 +911,8 @@ Layer(2 "solder")
 	Line[184175 157500 182500 155000 2000 3200 "clearline"]
 	Line[182500 145000 182500 140000 2000 3200 "clearline"]
 	Line[190000 152500 190000 161675 2000 3200 "clearline"]
-	Line[167500 115000 201000 115000 2000 3200 "clearline"]
-	Line[207500 131500 188500 131500 2000 3200 "clearline"]
+	Line[215000 139000 215000 140000 2000 3200 "clearline"]
+	Line[135000 137500 137500 135000 2000 3200 "clearline"]
 	Line[135000 145000 132500 145000 2000 3200 "clearline"]
 	Line[195000 167500 195000 152500 2000 3200 "clearline"]
 	Line[137500 135000 155000 135000 2000 3200 "clearline"]
@@ -923,9 +923,16 @@ Layer(2 "solder")
 	Line[175000 122500 177500 122500 2000 3200 "clearline"]
 	Line[155000 135000 157500 132500 2000 3200 "clearline"]
 	Line[135000 115000 165000 115000 2000 3200 "clearline"]
-	Line[145000 146675 155825 157500 2000 3200 "clearline"]
-	Line[135000 137500 137500 135000 2000 3200 "clearline"]
-	Line[145000 122500 140000 122500 2000 3200 "clearline"]
+	Line[207500 131500 204000 131500 2000 3200 "clearline"]
+	Line[204000 131500 187500 115000 2000 3200 "clearline"]
+	Line[207500 121500 211500 121500 2000 3200 "clearline"]
+	Line[215000 145000 215000 125000 2000 3200 "clearline"]
+	Line[211500 121500 215000 125000 2000 3200 "clearline"]
+	Line[195000 152500 197500 150000 2000 3200 "clearline"]
+	Line[197500 150000 210000 150000 2000 3200 "clearline"]
+	Line[210000 150000 215000 145000 2000 3200 "clearline"]
+	Line[187500 142500 206500 142500 2000 3200 "clearline"]
+	Line[206500 142500 207500 141500 2000 3200 "clearline"]
 )
 Layer(3 "outline")
 (
@@ -943,15 +950,15 @@ Layer(5 "silk")
 	Text[167500 130500 0 66 "10K" ""]
 	Text[155000 140500 0 66 "220" ""]
 	Text[213500 118000 0 121 "Vcc" ""]
-	Text[213500 128000 0 121 "Vout" ""]
-	Text[213000 138000 0 121 "GND" ""]
+	Text[213000 128000 0 121 "GND" ""]
 	Text[123000 111000 0 121 "Gen7 Opto Endstop" ""]
+	Text[213500 138000 0 121 "Signal" ""]
 )
 NetList()
 (
 	Net("GND" "(unknown)")
 	(
-		Connect("CONN1-3")
+		Connect("CONN1-2")
 		Connect("U1-2")
 		Connect("U1-5")
 	)
@@ -962,7 +969,7 @@ NetList()
 	)
 	Net("unnamed_net2" "(unknown)")
 	(
-		Connect("CONN1-2")
+		Connect("CONN1-1")
 		Connect("R1-1")
 		Connect("R3-1")
 		Connect("U1-4")
@@ -974,7 +981,7 @@ NetList()
 	)
 	Net("Vcc" "(unknown)")
 	(
-		Connect("CONN1-1")
+		Connect("CONN1-3")
 		Connect("LED1-2")
 		Connect("R1-2")
 		Connect("R2-2")

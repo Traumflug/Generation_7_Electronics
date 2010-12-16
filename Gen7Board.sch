@@ -189,7 +189,7 @@ device=RESISTOR
 T 30200 34800 5 10 1 1 0 0 1
 refdes=R11
 T 30200 34400 5 10 1 1 0 0 1
-value=100K
+value=1K
 T 30000 34500 5 10 0 1 0 0 1
 footprint=0.125W_Carbon_Resistor
 }
@@ -200,7 +200,7 @@ device=RESISTOR
 T 30200 38500 5 10 1 1 0 0 1
 refdes=R12
 T 30200 38100 5 10 1 1 0 0 1
-value=100K
+value=1K
 T 30000 38200 5 10 0 1 0 0 1
 footprint=0.125W_Carbon_Resistor
 }
@@ -211,7 +211,7 @@ device=RESISTOR
 T 30200 42200 5 10 1 1 0 0 1
 refdes=R13
 T 30200 41800 5 10 1 1 0 0 1
-value=100K
+value=1K
 T 30000 41900 5 10 0 1 0 0 1
 footprint=0.125W_Carbon_Resistor
 }

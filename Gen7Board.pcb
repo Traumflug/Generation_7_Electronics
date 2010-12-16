@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Thu Dec 16 22:33:17 2010
+# date:    Thu Dec 16 22:40:08 2010
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -2042,10 +2042,10 @@ Layer(1 "solder")
 	Line[340000 97500 390000 97500 7874 3150 ""]
 	Line[70748 25000 70748 31752 7874 3150 ""]
 	Line[385000 310000 385000 315000 2000 3200 ""]
-	Line[270000 107500 270000 132500 2000 3200 ""]
+	Line[352500 107500 362500 107500 2000 3200 ""]
 	Line[40000 90000 50000 90000 5000 2000 ""]
 	Line[102244 25000 102600 25356 7874 3150 ""]
-	Line[260000 107500 260000 97500 5000 3200 ""]
+	Line[45000 135000 82500 135000 2000 3200 ""]
 	Line[45000 107382 45059 107441 2000 3200 ""]
 	Line[372500 142500 370000 145000 2000 3200 ""]
 	Line[252500 307500 245000 300000 2000 3200 ""]
@@ -2053,7 +2053,7 @@ Layer(1 "solder")
 	Line[55000 25000 55000 57382 7874 3150 ""]
 	Line[285000 235000 285000 237000 1000 2000 "auto"]
 	Line[75000 57382 75059 57441 7874 3150 ""]
-	Line[75059 107441 75059 97559 5000 3200 ""]
+	Line[167500 107500 177500 107500 2000 3200 ""]
 	Line[342500 107500 342500 125000 2000 3200 ""]
 	Line[85059 57441 85059 49941 7874 3150 ""]
 	Line[110000 142500 115000 142500 2000 3200 ""]
@@ -2070,7 +2070,7 @@ Layer(1 "solder")
 	Line[290000 210000 305000 225000 2000 3200 ""]
 	Line[55000 57382 55059 57441 7874 3150 ""]
 	Line[187500 52500 192500 47500 2000 3200 ""]
-	Line[177500 107500 177500 132500 2000 3200 ""]
+	Line[260000 107500 270000 107500 2000 3200 ""]
 	Line[147500 57500 147500 45000 7874 3150 ""]
 	Line[215000 220000 215000 235000 2000 3200 ""]
 	Line[375000 235000 375000 232500 2000 3200 ""]
@@ -2117,7 +2117,7 @@ Layer(1 "solder")
 	Line[335000 320000 335000 315000 2000 3200 ""]
 	Line[147500 87500 157500 97500 7874 3150 ""]
 	Line[277500 360000 300000 360000 2000 3200 ""]
-	Line[177500 132500 175000 135000 2000 3200 ""]
+	Line[54000 186500 78500 186500 2000 3200 ""]
 	Line[130250 107500 130250 107500 1000 2000 "auto"]
 	Line[102244 32756 85000 50000 7874 3150 ""]
 	Line[340000 320000 340000 315000 2000 3200 ""]
@@ -2131,10 +2131,10 @@ Layer(1 "solder")
 	Line[75000 45000 75000 57382 7874 3150 ""]
 	Line[277500 347500 282500 352500 2000 3200 ""]
 	Line[280000 57500 280000 52500 2000 3200 ""]
-	Line[167500 107500 167500 97500 5000 3200 ""]
+	Line[50000 182500 54000 186500 2000 3200 ""]
 	Line[177500 235000 185000 235000 2000 3200 ""]
 	Line[372500 67500 372500 57500 5000 3200 ""]
-	Line[85059 107441 85059 132441 2000 3200 ""]
+	Line[22500 182500 50000 182500 2000 3200 ""]
 	Line[322500 135000 360000 135000 2000 3200 ""]
 	Line[175000 135000 176000 135000 1000 2000 ""]
 	Line[50000 90000 57500 97500 5000 2000 ""]
@@ -2147,14 +2147,14 @@ Layer(1 "solder")
 	Line[247500 97500 305000 97500 7874 3150 ""]
 	Line[390000 97500 390000 150000 5000 2000 ""]
 	Line[327500 332500 340000 320000 2000 3200 ""]
-	Line[270000 132500 267500 135000 2000 3200 ""]
+	Line[20000 172500 22500 172500 1000 2000 "auto"]
 	Line[250000 107500 250000 125000 2000 3200 ""]
 	Line[222500 87500 237500 87500 7874 3150 ""]
 	Line[22500 172500 55000 172500 5000 3200 ""]
-	Line[362500 132500 360000 135000 2000 3200 ""]
-	Line[362500 107500 362500 132500 2000 3200 ""]
+	Line[37500 142500 87500 142500 5000 2000 ""]
+	Line[87500 172500 87500 177500 2000 3200 ""]
 	Line[327500 335000 327500 332500 2000 3200 ""]
-	Line[352500 107500 352500 97500 5000 3200 ""]
+	Line[78500 186500 87500 177500 2000 3200 ""]
 	Line[342500 107500 343500 108500 1000 2000 ""]
 	Line[65059 57441 65059 37441 7874 3150 ""]
 	Line[95059 54941 102500 47500 2000 3200 ""]
@@ -2180,7 +2180,7 @@ Layer(1 "solder")
 	Line[305000 225000 305000 235000 2000 3200 ""]
 	Line[230000 205000 235000 210000 2000 3200 ""]
 	Line[187500 107500 187500 200000 2000 3200 ""]
-	Line[85059 132441 82500 135000 2000 3200 ""]
+	Line[67500 157500 67500 172500 2000 3200 ""]
 	Line[385000 342500 377500 342500 2000 3200 ""]
 	Line[330709 33209 342500 45000 7874 3150 ""]
 	Line[235000 210000 235000 235000 2000 3200 ""]
@@ -2380,15 +2380,7 @@ Layer(1 "solder")
 	Line[182500 210000 220000 210000 2000 3200 ""]
 	Line[220000 210000 225000 215000 2000 3200 ""]
 	Line[22500 140000 35000 140000 5000 2000 ""]
-	Line[67500 157500 67500 172500 2000 3200 ""]
-	Line[22500 182500 50000 182500 2000 3200 ""]
-	Line[50000 182500 54000 186500 2000 3200 ""]
-	Line[54000 186500 78500 186500 2000 3200 ""]
-	Line[45000 135000 82500 135000 2000 3200 ""]
-	Line[20000 172500 22500 172500 1000 2000 "auto"]
-	Line[78500 186500 87500 177500 2000 3200 ""]
-	Line[87500 172500 87500 177500 2000 3200 ""]
-	Line[37500 142500 87500 142500 5000 2000 ""]
+	Line[75059 107441 85059 107441 2000 3200 ""]
 	Text[207500 152500 0 199 "This Board is    NOT FINISHED" ""]
 	Text[207500 170000 0 155 "(c) Traumflug, Jacky2k" ""]
 	Text[207500 180000 0 177 "for RepRap" ""]
@@ -2582,13 +2574,9 @@ NetList()
 		Connect("RT2-2")
 		Connect("TEMP1-1")
 		Connect("TEMP2-1")
-		Connect("U2-5")
 		Connect("U2-10")
-		Connect("U3-5")
 		Connect("U3-10")
-		Connect("U4-5")
 		Connect("U4-10")
-		Connect("U5-5")
 		Connect("U5-10")
 		Connect("X_MAX-3")
 		Connect("X_MIN-3")
@@ -2860,10 +2848,7 @@ NetList()
 	)
 	Net("unnamed_net35" "(unknown)")
 	(
-		Connect("J1-2")
-		Connect("J2-2")
-		Connect("J3-2")
-		Connect("R2-2")
+		Connect("U2-5")
 		Connect("U2-6")
 	)
 	Net("unnamed_net36" "(unknown)")
@@ -2888,196 +2873,215 @@ NetList()
 	)
 	Net("unnamed_net40" "(unknown)")
 	(
+		Connect("J1-2")
+		Connect("J2-2")
+		Connect("J3-2")
+		Connect("R2-2")
+	)
+	Net("unnamed_net41" "(unknown)")
+	(
 		Connect("J4-1")
 		Connect("R5-2")
 		Connect("U3-2")
 	)
-	Net("unnamed_net41" "(unknown)")
+	Net("unnamed_net42" "(unknown)")
 	(
 		Connect("J5-1")
 		Connect("U3-3")
 	)
-	Net("unnamed_net42" "(unknown)")
+	Net("unnamed_net43" "(unknown)")
 	(
 		Connect("J6-1")
 		Connect("U3-4")
 	)
-	Net("unnamed_net43" "(unknown)")
+	Net("unnamed_net44" "(unknown)")
+	(
+		Connect("U3-5")
+		Connect("U3-6")
+	)
+	Net("unnamed_net45" "(unknown)")
+	(
+		Connect("U3-11")
+		Connect("Y_MOT-4")
+	)
+	Net("unnamed_net46" "(unknown)")
+	(
+		Connect("U3-12")
+		Connect("Y_MOT-3")
+	)
+	Net("unnamed_net47" "(unknown)")
+	(
+		Connect("U3-13")
+		Connect("Y_MOT-2")
+	)
+	Net("unnamed_net48" "(unknown)")
+	(
+		Connect("U3-14")
+		Connect("Y_MOT-1")
+	)
+	Net("unnamed_net49" "(unknown)")
 	(
 		Connect("J4-2")
 		Connect("J5-2")
 		Connect("J6-2")
 		Connect("R6-2")
-		Connect("U3-6")
 	)
-	Net("unnamed_net44" "(unknown)")
-	(
-		Connect("U3-11")
-		Connect("Y_MOT-4")
-	)
-	Net("unnamed_net45" "(unknown)")
-	(
-		Connect("U3-12")
-		Connect("Y_MOT-3")
-	)
-	Net("unnamed_net46" "(unknown)")
-	(
-		Connect("U3-13")
-		Connect("Y_MOT-2")
-	)
-	Net("unnamed_net47" "(unknown)")
-	(
-		Connect("U3-14")
-		Connect("Y_MOT-1")
-	)
-	Net("unnamed_net48" "(unknown)")
+	Net("unnamed_net50" "(unknown)")
 	(
 		Connect("J7-1")
 		Connect("R7-2")
 		Connect("U4-2")
 	)
-	Net("unnamed_net49" "(unknown)")
+	Net("unnamed_net51" "(unknown)")
 	(
 		Connect("J8-1")
 		Connect("U4-3")
 	)
-	Net("unnamed_net50" "(unknown)")
+	Net("unnamed_net52" "(unknown)")
 	(
 		Connect("J9-1")
 		Connect("U4-4")
 	)
-	Net("unnamed_net51" "(unknown)")
+	Net("unnamed_net53" "(unknown)")
+	(
+		Connect("U4-5")
+		Connect("U4-6")
+	)
+	Net("unnamed_net54" "(unknown)")
+	(
+		Connect("U4-11")
+		Connect("Z_MOT-4")
+	)
+	Net("unnamed_net55" "(unknown)")
+	(
+		Connect("U4-12")
+		Connect("Z_MOT-3")
+	)
+	Net("unnamed_net56" "(unknown)")
+	(
+		Connect("U4-13")
+		Connect("Z_MOT-2")
+	)
+	Net("unnamed_net57" "(unknown)")
+	(
+		Connect("U4-14")
+		Connect("Z_MOT-1")
+	)
+	Net("unnamed_net58" "(unknown)")
 	(
 		Connect("J7-2")
 		Connect("J8-2")
 		Connect("J9-2")
 		Connect("R8-2")
-		Connect("U4-6")
 	)
-	Net("unnamed_net52" "(unknown)")
-	(
-		Connect("U4-11")
-		Connect("Z_MOT-4")
-	)
-	Net("unnamed_net53" "(unknown)")
-	(
-		Connect("U4-12")
-		Connect("Z_MOT-3")
-	)
-	Net("unnamed_net54" "(unknown)")
-	(
-		Connect("U4-13")
-		Connect("Z_MOT-2")
-	)
-	Net("unnamed_net55" "(unknown)")
-	(
-		Connect("U4-14")
-		Connect("Z_MOT-1")
-	)
-	Net("unnamed_net56" "(unknown)")
+	Net("unnamed_net59" "(unknown)")
 	(
 		Connect("J10-1")
 		Connect("R9-2")
 		Connect("U5-2")
 	)
-	Net("unnamed_net57" "(unknown)")
+	Net("unnamed_net60" "(unknown)")
 	(
 		Connect("J11-1")
 		Connect("U5-3")
 	)
-	Net("unnamed_net58" "(unknown)")
+	Net("unnamed_net61" "(unknown)")
 	(
 		Connect("J12-1")
 		Connect("U5-4")
 	)
-	Net("unnamed_net59" "(unknown)")
+	Net("unnamed_net62" "(unknown)")
+	(
+		Connect("U5-5")
+		Connect("U5-6")
+	)
+	Net("unnamed_net63" "(unknown)")
+	(
+		Connect("E_MOT-4")
+		Connect("U5-11")
+	)
+	Net("unnamed_net64" "(unknown)")
+	(
+		Connect("E_MOT-3")
+		Connect("U5-12")
+	)
+	Net("unnamed_net65" "(unknown)")
+	(
+		Connect("E_MOT-2")
+		Connect("U5-13")
+	)
+	Net("unnamed_net66" "(unknown)")
+	(
+		Connect("E_MOT-1")
+		Connect("U5-14")
+	)
+	Net("unnamed_net67" "(unknown)")
 	(
 		Connect("J10-2")
 		Connect("J11-2")
 		Connect("J12-2")
 		Connect("R10-2")
-		Connect("U5-6")
 	)
-	Net("unnamed_net60" "(unknown)")
-	(
-		Connect("E_MOT-4")
-		Connect("U5-11")
-	)
-	Net("unnamed_net61" "(unknown)")
-	(
-		Connect("E_MOT-3")
-		Connect("U5-12")
-	)
-	Net("unnamed_net62" "(unknown)")
-	(
-		Connect("E_MOT-2")
-		Connect("U5-13")
-	)
-	Net("unnamed_net63" "(unknown)")
-	(
-		Connect("E_MOT-1")
-		Connect("U5-14")
-	)
-	Net("unnamed_net64" "(unknown)")
+	Net("unnamed_net68" "(unknown)")
 	(
 		Connect("Q1-1")
 		Connect("R11-1")
 	)
-	Net("unnamed_net65" "(unknown)")
+	Net("unnamed_net69" "(unknown)")
 	(
 		Connect("Q2-1")
 		Connect("R12-1")
 	)
-	Net("unnamed_net66" "(unknown)")
+	Net("unnamed_net70" "(unknown)")
 	(
 		Connect("Q3-1")
 		Connect("R13-1")
 	)
-	Net("unnamed_net67" "(unknown)")
+	Net("unnamed_net71" "(unknown)")
 	(
 		Connect("D3-1")
 		Connect("FAN1-3")
 		Connect("LED2-2")
 		Connect("Q3-2")
 	)
-	Net("unnamed_net68" "(unknown)")
+	Net("unnamed_net72" "(unknown)")
 	(
 		Connect("LED2-1")
 		Connect("R14-2")
 	)
-	Net("unnamed_net69" "(unknown)")
+	Net("unnamed_net73" "(unknown)")
 	(
 		Connect("C5-2")
 		Connect("SERIAL-6")
 	)
-	Net("unnamed_net70" "(unknown)")
+	Net("unnamed_net74" "(unknown)")
 	(
 		Connect("LED3-2")
 		Connect("R16-1")
 	)
-	Net("unnamed_net71" "(unknown)")
+	Net("unnamed_net75" "(unknown)")
 	(
 		Connect("LED4-1")
 		Connect("R18-2")
 	)
-	Net("unnamed_net72" "(unknown)")
+	Net("unnamed_net76" "(unknown)")
 	(
 		Connect("LED5-1")
 		Connect("R22-2")
 	)
-	Net("unnamed_net73" "(unknown)")
+	Net("unnamed_net77" "(unknown)")
 	(
 		Connect("D1-1")
 		Connect("HEATER2-3")
 		Connect("LED5-2")
 		Connect("Q2-2")
 	)
-	Net("unnamed_net74" "(unknown)")
+	Net("unnamed_net78" "(unknown)")
 	(
 		Connect("LED6-1")
 		Connect("R23-2")
 	)
-	Net("unnamed_net75" "(unknown)")
+	Net("unnamed_net79" "(unknown)")
 	(
 		Connect("D2-1")
 		Connect("HEATER1-3")

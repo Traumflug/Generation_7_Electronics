@@ -25,7 +25,7 @@ device=RESISTOR
 T 46100 50000 5 10 1 1 0 0 1
 refdes=R2
 T 46100 49500 5 10 1 1 0 0 1
-value=100K
+value=1K
 T 45900 49700 5 10 0 1 0 0 1
 footprint=0.125W_Carbon_Resistor
 }
@@ -57,7 +57,7 @@ device=RESISTOR
 T 46100 46800 5 10 1 1 0 0 1
 refdes=R6
 T 46100 46300 5 10 1 1 0 0 1
-value=100K
+value=1K
 T 45900 46500 5 10 0 1 0 0 1
 footprint=0.125W_Carbon_Resistor
 }
@@ -84,7 +84,7 @@ device=RESISTOR
 T 46100 43300 5 10 1 1 0 0 1
 refdes=R8
 T 46100 42800 5 10 1 1 0 0 1
-value=100K
+value=1K
 T 45900 43000 5 10 0 1 0 0 1
 footprint=0.125W_Carbon_Resistor
 }
@@ -109,7 +109,7 @@ device=RESISTOR
 T 46100 40100 5 10 1 1 0 0 1
 refdes=R10
 T 46100 39600 5 10 1 1 0 0 1
-value=100K
+value=1K
 T 45900 39800 5 10 0 1 0 0 1
 footprint=0.125W_Carbon_Resistor
 }

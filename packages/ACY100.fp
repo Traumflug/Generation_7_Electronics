@@ -1,0 +1,10 @@
+Element(0x00 "Axial non-polar component (typically resistor or capacitor)," "" "ACY100" 245 70 0 100 0x00)
+(
+	Pin(0 25 55 30 "1" 0x101)
+	Pin(100 25 55 30 "2" 0x01)
+	ElementLine(-35 -10 135 -10 5)
+	ElementLine(135 -10 135 60 5)
+	ElementLine(135 60 -35 60 5)
+	ElementLine(-35 60 -35 -10 5)
+	Mark(0 25)
+)

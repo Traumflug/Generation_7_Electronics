@@ -301,7 +301,7 @@ refdes=C5
 T 23100 53600 5 10 0 0 90 0 1
 symversion=0.1
 T 24000 53400 5 10 0 1 0 0 1
-footprint=ACY300
+footprint=ACY100
 }
 C 22800 57300 1 180 0 gnd-1.sym
 N 22700 56600 22700 57000 4

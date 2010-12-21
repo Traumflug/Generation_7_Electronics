@@ -1294,3 +1294,7 @@ footprint=ACY100
 C 41400 41400 1 0 0 gnd-1.sym
 N 41100 42700 42000 42700 4
 N 41500 41800 41500 41700 4
+T 41800 52000 9 10 1 0 0 0 3
+Rtemp1 and Rtemp2 should match the
+Thermistor's resitance in it's operating
+point for maximum resolution.

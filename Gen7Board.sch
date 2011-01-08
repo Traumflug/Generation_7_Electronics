@@ -915,7 +915,7 @@ symversion=0.1
 T 45300 35700 5 10 0 0 0 0 1
 footprint=RCY3mm5
 T 45100 35500 5 10 1 1 270 0 1
-value=220 uF
+value=100 uF
 }
 C 40500 36500 1 270 0 capacitor-2.sym
 {
@@ -928,7 +928,7 @@ symversion=0.1
 T 40500 36500 5 10 0 0 0 0 1
 footprint=RCY3mm5
 T 40300 36300 5 10 1 1 270 0 1
-value=0.1 uF
+value=100 uF
 }
 C 34800 36500 1 270 0 capacitor-2.sym
 {
@@ -941,7 +941,7 @@ symversion=0.1
 T 34800 36500 5 10 0 0 0 0 1
 footprint=RCY3mm5
 T 34600 36300 5 10 1 1 270 0 1
-value=0.1 uF
+value=100 uF
 }
 C 39700 52400 1 270 0 capacitor-2.sym
 {

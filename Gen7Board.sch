@@ -286,7 +286,7 @@ device=CONNECTOR_6
 T 23900 56100 5 10 1 1 0 0 1
 refdes=SERIAL
 T 23600 56000 5 10 0 1 0 0 1
-footprint=JUMPER6
+footprint=100-6-1
 }
 C 25200 53700 1 0 0 gnd-1.sym
 C 24900 53700 1 0 0 gnd-1.sym

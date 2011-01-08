@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Sat Jan  8 13:28:57 2011
+# date:    Sat Jan  8 14:27:20 2011
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -1625,7 +1625,7 @@ Element["" "100-3-1" "Z_MIN" "unknown" 385000 472500 -12500 2500 3 100 ""]
 
 	)
 
-Element["" "ACY100" "C5" "unknown" 520000 397500 4500 8000 1 100 ""]
+Element["" "ACY100" "C5" "0.1_uF" 520000 397500 4500 8000 1 100 ""]
 (
 	Pin[0 0 5500 3000 6100 3000 "1" "1" "square"]
 	Pin[0 10000 5500 3000 6100 3000 "2" "2" ""]

@@ -615,10 +615,10 @@ C 39200 52500 1 270 0 resistor-1.sym
 {
 T 39600 52200 5 10 0 0 270 0 1
 device=RESISTOR
-T 39500 52300 5 10 1 1 270 0 1
+T 39400 52300 5 10 1 1 270 0 1
 refdes=RT1
-T 39300 53400 5 10 1 1 270 0 1
-value=Rtemp1
+T 39400 51800 5 10 1 1 270 0 1
+value=4K7
 T 39200 52500 5 10 0 1 0 0 1
 footprint=0.125W_Carbon_Resistor
 }
@@ -633,10 +633,10 @@ C 40400 52500 1 270 0 resistor-1.sym
 {
 T 40800 52200 5 10 0 0 270 0 1
 device=RESISTOR
-T 40700 52300 5 10 1 1 270 0 1
+T 40600 52300 5 10 1 1 270 0 1
 refdes=RT2
-T 40500 53400 5 10 1 1 270 0 1
-value=Rtemp2
+T 40600 51800 5 10 1 1 270 0 1
+value=4k7
 T 40400 52500 5 10 0 1 0 0 1
 footprint=0.125W_Carbon_Resistor
 }
@@ -1301,6 +1301,6 @@ C 41400 41400 1 0 0 gnd-1.sym
 N 41100 42700 42000 42700 4
 N 41500 41800 41500 41700 4
 T 41800 52000 9 10 1 0 0 0 3
-Rtemp1 and Rtemp2 should match the
+RT1 and RT2 should match the
 Thermistor's resitance in it's operating
 point for maximum resolution.

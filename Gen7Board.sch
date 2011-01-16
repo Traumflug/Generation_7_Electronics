@@ -217,16 +217,12 @@ C 42400 46700 1 90 0 gnd-1.sym
 N 41800 46800 42100 46800 4
 C 35600 44600 1 180 0 crystal-1.sym
 {
-T 35400 44100 5 10 0 0 180 0 1
-device=CRYSTAL
 T 35400 44300 5 10 1 1 180 0 1
 refdes=U6
-T 35400 43900 5 10 0 0 180 0 1
-symversion=0.1
 T 35600 44800 5 10 1 1 180 0 1
-value=16 mHz
+value=16 MHz
 T 35600 44600 5 10 0 1 0 0 1
-footprint=crystal
+footprint=CRYSTAL_AS
 }
 C 34700 43900 1 270 0 capacitor-1.sym
 {

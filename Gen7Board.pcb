@@ -1,7 +1,7 @@
 # release: pcb 20091103
-# date:    Tue Jan 25 00:16:35 2011
-# user:    mah (Markus Hitter,,,)
-# host:    piccard
+# date:    Sun Jan 16 17:45:45 2011
+# user:    fabian (Fabian Schwartau,,,)
+# host:    fabian-desktop
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
@@ -1230,7 +1230,7 @@ Element["" "POLOLUSTEPPER-1" "U5" "unknown" 207500 222500 3000 -6000 2 100 ""]
 
 	)
 
-Element["" "ACY100" "C19" "100_nF" 447500 285000 -8000 -10500 0 100 ""]
+Element["" "ACY100" "C19" "0.1_uF" 447500 285000 -8000 -10500 0 100 ""]
 (
 	Pin[0 0 5500 3000 6100 3000 "1" "1" "square,edge2"]
 	Pin[-10000 0 5500 3000 6100 3000 "2" "2" "edge2"]
@@ -1421,7 +1421,7 @@ Element["" "ACY100" "C14" "0.1_uF" 447500 380000 -10500 4500 0 100 ""]
 
 	)
 
-Element["" "ACY100" "C18" "100_nF" 427500 295000 -3000 -10500 0 100 ""]
+Element["" "ACY100" "C18" "0.1_uF" 427500 295000 -3000 -10500 0 100 ""]
 (
 	Pin[0 0 5500 3000 6100 3000 "1" "1" "square,edge2"]
 	Pin[10000 0 5500 3000 6100 3000 "2" "2" "edge2"]

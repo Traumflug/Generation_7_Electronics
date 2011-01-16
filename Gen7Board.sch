@@ -1213,7 +1213,7 @@ refdes=C18
 T 43600 46900 5 10 0 0 270 0 1
 symversion=0.1
 T 42500 46900 5 10 1 1 270 0 1
-value=100 nF
+value=0.1 uF
 T 42700 47100 5 10 0 1 0 0 1
 footprint=ACY100
 }
@@ -1240,7 +1240,7 @@ refdes=C19
 T 42200 42500 5 10 0 0 270 0 1
 symversion=0.1
 T 41100 42500 5 10 1 1 270 0 1
-value=100 nF
+value=0.1 uF
 T 41300 42700 5 10 0 1 0 0 1
 footprint=ACY100
 }

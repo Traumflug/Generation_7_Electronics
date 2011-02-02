@@ -870,7 +870,7 @@ refdes=CT1
 T 40600 52200 5 10 0 0 270 0 1
 symversion=0.1
 T 39700 52400 5 10 0 0 0 0 1
-footprint=RCY100
+footprint=RCY2mm
 T 39800 53200 5 10 1 1 270 0 1
 value=10 uF
 }
@@ -883,7 +883,7 @@ refdes=CT2
 T 41800 52200 5 10 0 0 270 0 1
 symversion=0.1
 T 40900 52400 5 10 0 0 0 0 1
-footprint=RCY100
+footprint=RCY2mm
 T 41000 53200 5 10 1 1 270 0 1
 value=10 uF
 }

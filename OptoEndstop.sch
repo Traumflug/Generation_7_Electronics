@@ -33,7 +33,7 @@ C 45400 49200 1 90 0 led-3.sym
 T 44850 49550 5 10 1 1 90 0 1
 refdes=LED1
 T 45400 49200 5 10 0 0 0 0 1
-footprint=LED 60
+footprint=LED3_1
 }
 C 45300 48100 1 90 0 resistor-2.sym
 {

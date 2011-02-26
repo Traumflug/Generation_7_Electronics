@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Wed Feb  2 13:26:53 2011
+# date:    Sat Feb 26 15:27:44 2011
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -798,17 +798,6 @@ Symbol('~' 12)
 	SymbolLine(20 35 25 30 8)
 )
 
-Element["" "LED-60" "LED1" "unknown" 135000 132500 -13000 5000 1 100 ""]
-(
-	Pin[0 -5000 6500 3000 7100 4300 "CATHODE" "1" "square"]
-	Pin[0 5000 6500 3000 7100 4300 "ANODE" "2" ""]
-	ElementArc [0 0 5000 5000 135 90 1000]
-	ElementArc [0 0 5000 5000 315 90 1000]
-	ElementArc [0 0 3000 3000 135 90 1000]
-	ElementArc [0 0 3000 3000 315 90 1000]
-
-	)
-
 Element["" "100-3-1" "CONN1" "unknown" 207500 141500 -12500 -4000 1 78 ""]
 (
 	Pin[0 0 7000 2000 7600 4000 "1" "1" ""]
@@ -880,6 +869,17 @@ Element["" "H21L-1" "U1" "unknown" 170000 162500 -5000 5000 0 100 ""]
 	ElementArc [-46000 8450 4000 4000 0 90 1000]
 	ElementArc [46000 -8450 4000 4000 180 90 1000]
 	ElementArc [-46000 -8450 4000 4000 270 90 1000]
+
+	)
+
+Element["" "LED3_1" "LED1" "unknown" 135000 132500 -8500 -5000 3 100 ""]
+(
+	Pin[0 -5000 6500 3000 7100 3000 "CATHODE" "1" "square"]
+	Pin[0 5000 6500 3000 7100 3000 "ANODE" "2" ""]
+	ElementArc [0 0 7900 7900 135 90 1000]
+	ElementArc [0 0 7900 7900 315 90 1000]
+	ElementArc [0 0 5900 5900 135 90 1000]
+	ElementArc [0 0 5900 5900 315 90 1000]
 
 	)
 Layer(1 "component")

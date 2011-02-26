@@ -585,7 +585,7 @@ device=RESISTOR
 T 40600 52300 5 10 1 1 270 0 1
 refdes=RT2
 T 40600 51800 5 10 1 1 270 0 1
-value=4k7
+value=4K7
 T 40400 52500 5 10 0 1 0 0 1
 footprint=0.125W_Carbon_Resistor
 }

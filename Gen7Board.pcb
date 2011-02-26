@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Thu Feb  3 00:39:05 2011
+# date:    Sat Feb 26 13:33:19 2011
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -1455,7 +1455,7 @@ Element["" "TO-220_FLAT" "Q2" "TIP120" 255000 422500 30000 -2500 3 100 ""]
 
 	)
 
-Element["" "0.125W_Carbon_Resistor" "RT2" "4k7" 242441 302559 -3000 -10500 1 100 ""]
+Element["" "0.125W_Carbon_Resistor" "RT2" "4K7" 242441 302559 -3000 -10500 1 100 ""]
 (
 	Pin[0 0 6000 3000 6000 2800 "1" "1" ""]
 	Pin[0 -30000 6000 3000 6000 2800 "2" "2" ""]

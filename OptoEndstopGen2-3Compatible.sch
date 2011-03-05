@@ -42,7 +42,7 @@ refdes=R3
 T 45300 48400 5 10 1 1 90 0 1
 value=1K
 T 45300 48100 5 10 0 0 0 0 1
-footprint=ACY300
+footprint=ACY300_1
 }
 C 43800 45600 1 0 0 resistor-2.sym
 {
@@ -51,7 +51,7 @@ refdes=R1
 T 44000 45600 5 10 1 1 0 0 1
 value=10K
 T 43800 45600 5 10 0 0 0 0 1
-footprint=ACY300
+footprint=ACY300_1
 }
 C 43800 47800 1 0 0 resistor-2.sym
 {
@@ -60,7 +60,7 @@ refdes=R2
 T 44100 47800 5 10 1 1 0 0 1
 value=220
 T 43800 47800 5 10 0 0 0 0 1
-footprint=ACY300
+footprint=ACY300_1
 }
 C 45700 45700 1 0 0 gnd-1.sym
 C 45600 50400 1 0 0 vcc-1.sym

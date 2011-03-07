@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Tue Mar  8 00:30:17 2011
+# date:    Tue Mar  8 00:48:45 2011
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -14,7 +14,7 @@ PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[1575 1000 1969 1000 1500 1000]
 Flags("showdrc,nameonpcb,clearnew,newfullpoly,snappin")
-Groups("1,2,3,5,s:4,c")
+Groups("1,2,3,4,6,s:5,c")
 Styles["Signal,2000,6000,3000,1600:Power,5000,6000,3000,1000:Fat,5000,9500,7000,1600:Skinny,7874,7874,3937,1575"]
 
 Symbol(' ' 18)
@@ -2469,8 +2469,6 @@ Layer(1 "solder")
 	Line[330000 180000 330000 155000 7874 3150 "clearline"]
 	Line[358996 152500 358996 156004 7874 3150 "clearline"]
 	Line[447500 330000 447500 310000 2000 3200 "clearline"]
-	Text[432500 317500 2 231 "RepRap Gen7" "clearline,auto"]
-	Text[505000 317500 2 231 "GPLv2" "clearline,auto"]
 )
 Layer(2 "GND-sldr")
 (
@@ -2605,7 +2603,12 @@ Layer(3 "Vcc-sldr")
 	Line[170000 330000 170000 207500 7874 3150 "clearline"]
 	Line[170000 330000 177500 337500 7874 3150 "clearline"]
 )
-Layer(4 "component")
+Layer(4 "Text-sldr")
+(
+	Text[432500 317500 2 231 "RepRap Gen7" "clearline,auto"]
+	Text[505000 317500 2 231 "GPLv2" "clearline,auto"]
+)
+Layer(5 "component")
 (
 	Line[252441 272559 252441 292559 5000 2000 ""]
 	Line[562500 447500 592500 447500 5000 2000 ""]
@@ -2619,17 +2622,17 @@ Layer(4 "component")
 	Line[267500 187500 267441 215059 5000 2000 ""]
 	Line[359941 187559 360000 215000 5000 2000 ""]
 )
-Layer(5 "outline")
+Layer(6 "outline")
 (
 	Line[122047 511811 122047 118110 2000 3200 ""]
 	Line[122047 118110 633858 118110 2000 3200 ""]
 	Line[633858 118110 633858 511811 2000 3200 ""]
 	Line[633858 511811 122047 511811 2000 3200 ""]
 )
-Layer(6 "unused")
+Layer(7 "unused")
 (
 )
-Layer(7 "unused")
+Layer(8 "unused")
 (
 	Text[350000 335000 0 121 "(c) 2010 Traumflug, Jacky2k" ""]
 	Text[350000 342500 0 121 "for RepRap" ""]

@@ -27,7 +27,7 @@ refdes=R2
 T 46100 49500 5 10 1 1 0 0 1
 value=1K
 T 45900 49700 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 N 45600 49800 45900 49800 4
 N 50400 49000 50200 49000 4
@@ -59,7 +59,7 @@ refdes=R6
 T 46100 46300 5 10 1 1 0 0 1
 value=1K
 T 45900 46500 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 N 47000 46200 48000 46200 4
 N 47000 46400 48000 46400 4
@@ -86,7 +86,7 @@ refdes=R8
 T 46100 42800 5 10 1 1 0 0 1
 value=1K
 T 45900 43000 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 N 45600 43100 45900 43100 4
 N 50200 42500 50400 42500 4
@@ -111,7 +111,7 @@ refdes=R10
 T 46100 39600 5 10 1 1 0 0 1
 value=1K
 T 45900 39800 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 N 45600 39900 45900 39900 4
 N 50200 39300 50400 39300 4
@@ -126,7 +126,7 @@ refdes=R11
 T 30200 34400 5 10 1 1 0 0 1
 value=1K
 T 30000 34500 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 C 30000 38200 1 0 0 resistor-1.sym
 {
@@ -137,7 +137,7 @@ refdes=R12
 T 30200 38100 5 10 1 1 0 0 1
 value=1K
 T 30000 38200 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 C 30000 41900 1 0 0 resistor-1.sym
 {
@@ -148,7 +148,7 @@ refdes=R13
 T 30200 41800 5 10 1 1 0 0 1
 value=1K
 T 30000 41900 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 C 25300 42800 1 0 0 led-1.sym
 {
@@ -170,7 +170,7 @@ refdes=R14
 T 24000 42800 5 10 1 1 0 0 1
 value=560
 T 23800 42900 5 10 0 0 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 C 23000 44200 1 0 0 12V-plus-1.sym
 C 29700 40600 1 0 0 gnd-1.sym
@@ -304,7 +304,7 @@ refdes=R16
 T 41200 36300 5 10 1 1 270 0 1
 value=180
 T 41400 36500 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 N 41500 39300 39900 39300 4
 N 35000 36500 35000 36800 4
@@ -329,7 +329,7 @@ refdes=R18
 T 33700 37700 5 10 1 1 270 0 1
 value=180
 T 33900 37900 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 N 34000 36400 34000 37000 4
 N 34000 37900 34000 38400 4
@@ -570,7 +570,7 @@ refdes=RT1
 T 39400 51800 5 10 1 1 270 0 1
 value=4K7
 T 39200 52500 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 N 40800 54300 40800 50800 4
 N 40800 50800 42600 50800 4
@@ -587,7 +587,7 @@ refdes=RT2
 T 40600 51800 5 10 1 1 270 0 1
 value=4K7
 T 40400 52500 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 C 41000 50900 1 0 0 gnd-1.sym
 C 40700 51200 1 180 0 5V-plus-1.sym
@@ -614,7 +614,7 @@ refdes=R22
 T 24000 39100 5 10 1 1 0 0 1
 value=560
 T 23800 39200 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 C 23000 40300 1 0 0 12V-plus-1.sym
 C 29700 36800 1 0 0 gnd-1.sym
@@ -640,7 +640,7 @@ refdes=R23
 T 24000 35400 5 10 1 1 0 0 1
 value=560
 T 23800 35500 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 C 23000 36500 1 0 0 12V-plus-1.sym
 N 25300 35600 24700 35600 4
@@ -963,7 +963,7 @@ refdes=R30
 T 33700 43900 5 10 1 1 90 0 1
 value=10K
 T 33500 43700 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 C 32700 41700 1 0 0 gnd-1.sym
 N 32800 43200 32800 47100 4
@@ -1223,7 +1223,7 @@ refdes=R3
 T 39700 40900 5 10 1 1 90 0 1
 value=10K
 T 39500 40700 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 C 38700 40700 1 90 0 resistor-1.sym
 {
@@ -1234,7 +1234,7 @@ refdes=R1
 T 38900 40900 5 10 1 1 90 0 1
 value=10K
 T 38700 40700 5 10 0 1 0 0 1
-footprint=0.125W_Carbon_Resistor
+footprint=ACY300_1
 }
 N 38600 41600 38600 42700 4
 N 39400 41600 39400 42700 4

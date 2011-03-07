@@ -159,7 +159,7 @@ refdes=LED2
 T 26100 43600 5 10 0 0 0 0 1
 symversion=0.1
 T 25300 42800 5 10 0 1 0 0 1
-footprint=LED5
+footprint=LED3_1
 }
 C 23800 42900 1 0 0 resistor-1.sym
 {
@@ -293,7 +293,7 @@ refdes=LED3
 T 42100 37600 5 10 0 0 270 0 1
 symversion=0.1
 T 41300 38400 5 10 0 1 0 0 1
-footprint=LED5
+footprint=LED3_1
 }
 C 41400 36500 1 270 0 resistor-1.sym
 {
@@ -318,7 +318,7 @@ refdes=LED4
 T 34600 35600 5 10 0 0 270 0 1
 symversion=0.1
 T 33800 36400 5 10 0 1 0 0 1
-footprint=LED5
+footprint=LED3_1
 }
 C 33900 37900 1 270 0 resistor-1.sym
 {
@@ -603,7 +603,7 @@ refdes=LED5
 T 26100 39900 5 10 0 0 0 0 1
 symversion=0.1
 T 25300 39100 5 10 0 1 0 0 1
-footprint=LED5
+footprint=LED3_1
 }
 C 23800 39200 1 0 0 resistor-1.sym
 {
@@ -629,7 +629,7 @@ refdes=LED6
 T 26100 36200 5 10 0 0 0 0 1
 symversion=0.1
 T 25300 35400 5 10 0 1 0 0 1
-footprint=LED5
+footprint=LED3_1
 }
 C 23800 35500 1 0 0 resistor-1.sym
 {

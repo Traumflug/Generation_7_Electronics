@@ -1,24 +1,4 @@
 v 20100214 2
-T 53500 63600 5 10 0 0 0 3 1
-footprint=H21L-1
-T 53500 61200 5 10 0 0 0 5 1
-description=Optical Interrupter Switch
-T 54700 62600 5 10 0 0 0 3 1
-footprint=H21L-1
-T 54700 60200 5 10 0 0 0 5 1
-description=Optical Interrupter Switch
-T 52700 64100 5 10 0 0 0 3 1
-footprint=H21L-1
-T 52700 61700 5 10 0 0 0 5 1
-description=Optical Interrupter Switch
-T 56300 61800 5 10 0 0 0 3 1
-footprint=H21L-1
-T 56300 59400 5 10 0 0 0 5 1
-description=Optical Interrupter Switch
-T 56100 61800 5 10 0 0 0 3 1
-footprint=H21L-1
-T 56100 59400 5 10 0 0 0 5 1
-description=Optical Interrupter Switch
 C 40700 45700 1 0 0 H21LOB-1.sym
 {
 T 42200 46050 5 10 1 1 0 5 1

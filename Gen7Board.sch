@@ -1192,7 +1192,7 @@ symversion=0.1
 T 40200 42400 5 10 1 1 0 0 1
 value=100 uH
 T 40100 42700 5 10 0 1 0 0 1
-footprint=ACY500
+footprint=ACY500_1
 }
 C 41300 42700 1 270 0 capacitor-1.sym
 {

@@ -1,5 +1,5 @@
 # release: pcb 20091103
-# date:    Thu Mar 10 00:24:23 2011
+# date:    Thu Mar 10 10:02:39 2011
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -12,7 +12,7 @@ Grid[2500.000000 0 0 1]
 Cursor[0 0 6.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
-DRC[1575 1000 1969 1000 1500 1000]
+DRC[1600 1000 1000 500 1500 1000]
 Flags("showdrc,nameonpcb,clearnew,newfullpoly,snappin")
 Groups("1,2,3,4,6,s:5,c")
 Styles["Signal,2000,6000,3000,1600:Power,5000,6000,3000,1000:Fat,5000,9500,7000,1600:Skinny,7874,7874,3937,1575"]

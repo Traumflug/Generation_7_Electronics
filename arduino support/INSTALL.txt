@@ -1,0 +1,40 @@
+Generation 7 Electronics Arduino IDE Support Installation Instructions
+Copyright (c) Markus "Traumflug" Hitter 2011
+============================================================
+
+As of Arduino-0018 and later, installing support for additional controllers
+is pretty easy.
+
+1. Find the folder where the IDE is stored. Where to find the folder depends
+   on where you installed it.
+
+2. Find the folder "hardware" there in, it sould contain the folders "arduino"
+   and "tools" already.
+
+3. Grab the folder "Gen7" next to this document and move it into the "hardware"
+   folder. Now you should see something like this:
+
+   arduino-0018
+   ____hardware
+   ________arduino
+   ________Gen7
+   ________tools
+
+4. Run the IDE and select you flavour of Board in Menu -> Tools -> Board.
+
+5. You're done. Compile and upload firmware as if Gen7 were an Arduino.
+
+
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 3 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  Lesser General Public License for more details.
+
+
+

@@ -19,6 +19,10 @@ DOC_DIR="${BASE_DIR}/release documents"
 rm -rf "${DOC_DIR}"
 mkdir -p "${DOC_DIR}"
 
+echo "Uncommitting old release ..."
+git rm "${DOC_DIR}"/* || exit 1
+echo "... done."
+
 echo "Create Arduino IDE support ..."
 cd "arduino support"
 ./make.sh

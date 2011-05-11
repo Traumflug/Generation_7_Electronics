@@ -1,4 +1,4 @@
-Element[0x00 "H21Lxx optical interrupter switch" "U?" "" 15000 6000 -5000 5000 0 100 ""]
+Element[0x00 "H21Lxx optical interrupter switch" "U?" "" 15000 6000 -2500 5000 0 100 ""]
 (
 	Pin[-14960 -5000 6000 2000 6500 3000 "+" "1" "edge2"]
 	Pin[-14960  5000 6000 2000 6500 3000 "E" "2" "edge2"]
@@ -8,4 +8,9 @@ Element[0x00 "H21Lxx optical interrupter switch" "U?" "" 15000 6000 -5000 5000 0
 	ElementLine [-23600  12450 23600  12450 1000]
 	ElementLine [-23600 -12450 -23600  12450 1000]
 	ElementLine [ 23600 -12450  23600  12450 1000]
+	# plus signs
+	ElementLine[-21500  -8500 -17500 -8500 1000]
+	ElementLine[-19500 -10500 -19500 -6500 1000]
+	ElementLine[17500  8500 21500 8500 1000]
+	ElementLine[19500 10500 19500 6500 1000]
 )

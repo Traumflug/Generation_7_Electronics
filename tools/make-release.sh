@@ -1,14 +1,17 @@
 #!/bin/bash
 
-# Make all files required for a release of Generation 7 Electronics.
-#
-# These files are distributed to help people to read, understand
-# and use the project without installing all the required tools.
+# Do everything required for making a release of Generation 7 Electronics.
 #
 # Copyright (c) Markus "Traumflug" Hitter 2011
 
+if [ "$1" = "" -o "$2" != "" ]; then
+  echo "usage: $(basename $0) <release-number>"
+  exit 1
+fi
+
 while [ ! -d .git ]; do cd ..; done
 
+RELEASE="$1"
 BASE_DIR="${PWD}"
 DOC_DIR="${BASE_DIR}/release documents"
 
@@ -16,17 +19,16 @@ DOC_DIR="${BASE_DIR}/release documents"
 rm -rf "${DOC_DIR}"
 mkdir -p "${DOC_DIR}"
 
-# Create Arduino IDE support.
+echo "Create Arduino IDE support ..."
 cd "arduino support"
 ./make.sh
 mv *.zip "${DOC_DIR}"
 cd "${BASE_DIR}"
+echo "... done."
 
-# Create electronics files.
-echo "Creating release tag ..."
-RELEASE=$(git tag | tail -1)
-touch "${DOC_DIR}/this is ${RELEASE}"
-unset RELEASE
+echo "Creating release number file ..."
+touch "${DOC_DIR}/this is release-${RELEASE}"
+echo "... done."
 
 echo "Creating schematic PDFs ..."
 for F in *.sch; do
@@ -37,6 +39,7 @@ for F in *.sch; do
   rm -f "${PS_DOC}"
   cd "${BASE_DIR}"
 done
+echo "... done."
 
 echo "Creating layout PDFs ..."
 for F in *.pcb; do
@@ -49,6 +52,7 @@ for F in *.pcb; do
   rm -f "${PS_DOC}"
   cd "${BASE_DIR}"
 done
+echo "... done."
 
 echo "Creating layout PNGs ..."
 for F in *.pcb; do
@@ -56,6 +60,7 @@ for F in *.pcb; do
   pcb -x png --dpi 300 --only-visible --format PNG \
     --outfile "${PNG_DOC}" "${F}" >/dev/null
 done
+echo "... done."
 
 echo "Creating layout Gerbers ..."
 for F in *.pcb; do
@@ -69,8 +74,19 @@ for F in *.pcb; do
   rm -rf "${GERBER_DIRNAME}"
   cd "${BASE_DIR}"
 done
+echo "... done."
 
-echo "Done."
+echo "Committing all the release files ..."
+git add "${DOC_DIR}"
+git commit -m "Make Release ${RELEASE}."
+echo "... please enter release message - usually starts"
+echo "    with \"New features: ...\" ..."
+sleep 3
+git tag -u 806F3A3E "release-${RELEASE}"
+echo "... done."
+
+echo "All done. Now push the result with \"git push --tags\"."
+
 
 #  This script is free software; you can redistribute it and/or
 #  modify it under the terms of the GNU General Public License

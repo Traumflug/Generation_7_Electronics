@@ -1,4 +1,4 @@
-v 20100214 2
+v 20110115 2
 C 38800 43400 1 0 0 ATMEGA644P-1.sym
 {
 T 40000 47900 5 10 1 1 0 0 1
@@ -899,7 +899,7 @@ C 39100 34200 1 270 0 ATX20-1.sym
 T 43400 33200 5 10 1 1 270 6 1
 refdes=CONN1
 T 43550 33900 5 10 0 0 270 0 1
-footprint=ATX20-1
+footprint=ATX20+4-1
 T 39100 33800 5 10 1 1 270 0 1
 device=ATX20
 }
@@ -1164,3 +1164,6 @@ refdes=TEMP2
 T 40300 56000 5 10 0 0 0 0 1
 footprint=100-2-1
 }
+T 41900 31900 9 10 1 0 0 0 2
+Uses an 24 pin footprint for
+compatibility with ATX24 PSUs

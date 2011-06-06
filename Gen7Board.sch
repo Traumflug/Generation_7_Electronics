@@ -289,7 +289,7 @@ device=RESISTOR
 T 41700 36300 5 10 1 1 270 0 1
 refdes=R16
 T 41200 36300 5 10 1 1 270 0 1
-value=180
+value=1K
 T 41400 36500 5 10 0 1 0 0 1
 footprint=ACY300_1
 }
@@ -314,7 +314,7 @@ device=RESISTOR
 T 34200 37700 5 10 1 1 270 0 1
 refdes=R18
 T 33700 37700 5 10 1 1 270 0 1
-value=180
+value=1K
 T 33900 37900 5 10 0 1 0 0 1
 footprint=ACY300_1
 }

@@ -141,14 +141,12 @@ footprint=ACY300_1
 }
 C 25300 42800 1 0 0 led-1.sym
 {
-T 26100 43400 5 10 0 0 0 0 1
-device=LED
 T 26100 43200 5 10 1 1 0 0 1
 refdes=LED2
-T 26100 43600 5 10 0 0 0 0 1
-symversion=0.1
 T 25300 42800 5 10 0 1 0 0 1
 footprint=LED3_1
+T 26100 44000 5 10 0 0 0 0 1
+description=green
 }
 C 23800 42900 1 0 0 resistor-1.sym
 {
@@ -273,14 +271,12 @@ C 22800 57300 1 180 0 gnd-1.sym
 N 22700 56600 22700 57000 4
 C 41300 38400 1 270 0 led-1.sym
 {
-T 41900 37600 5 10 0 0 270 0 1
-device=LED
 T 41700 37600 5 10 1 1 270 0 1
 refdes=LED3
-T 42100 37600 5 10 0 0 270 0 1
-symversion=0.1
 T 41300 38400 5 10 0 1 0 0 1
 footprint=LED3_1
+T 42500 37600 5 10 0 0 270 0 1
+description=yellow
 }
 C 41400 36500 1 270 0 resistor-1.sym
 {
@@ -298,14 +294,12 @@ N 35000 36500 35000 36800 4
 N 35000 36800 35400 36800 4
 C 33800 36400 1 270 0 led-1.sym
 {
-T 34400 35600 5 10 0 0 270 0 1
-device=LED
 T 34200 35600 5 10 1 1 270 0 1
 refdes=LED4
-T 34600 35600 5 10 0 0 270 0 1
-symversion=0.1
 T 33800 36400 5 10 0 1 0 0 1
 footprint=LED3_1
+T 34400 35600 5 10 0 0 270 0 1
+device=green
 }
 C 33900 37900 1 270 0 resistor-1.sym
 {
@@ -565,14 +559,12 @@ N 40500 51200 40500 51600 4
 N 39300 51200 39300 51600 4
 C 25300 39100 1 0 0 led-1.sym
 {
-T 26100 39700 5 10 0 0 0 0 1
-device=LED
 T 26100 39500 5 10 1 1 0 0 1
 refdes=LED5
-T 26100 39900 5 10 0 0 0 0 1
-symversion=0.1
 T 25300 39100 5 10 0 1 0 0 1
 footprint=LED3_1
+T 26100 40300 5 10 0 0 0 0 1
+description=green
 }
 C 23800 39200 1 0 0 resistor-1.sym
 {
@@ -1170,14 +1162,12 @@ compatibility with ATX24 PSUs
 N 30200 47400 30200 49200 4
 C 30400 49200 1 90 0 led-1.sym
 {
-T 29800 50000 5 10 0 0 90 0 1
-device=LED
 T 30500 49700 5 10 1 1 90 5 1
 refdes=DEBUG_LED
-T 29600 50000 5 10 0 0 90 0 1
-symversion=0.1
 T 30400 49200 5 10 0 1 90 0 1
 footprint=LED3_1
+T 29200 50000 5 10 0 0 90 0 1
+description=yellow
 }
 C 29100 49200 1 90 0 resistor-1.sym
 {

@@ -213,7 +213,7 @@ C 35600 44600 1 180 0 crystal-1.sym
 T 35400 44300 5 10 1 1 180 0 1
 refdes=U6
 T 35600 44800 5 10 1 1 180 0 1
-value=16 MHz
+value=20 MHz
 T 35600 44600 5 10 0 1 0 0 1
 footprint=CRYSTAL_AS
 }

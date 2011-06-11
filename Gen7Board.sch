@@ -743,7 +743,7 @@ C 27900 41200 1 0 0 connector3-1.sym
 T 27900 42300 5 10 1 1 0 0 1
 refdes=Q2
 T 27900 41200 5 10 0 0 180 0 1
-footprint=TO-220_FLAT
+footprint=TO-220-1
 T 27900 41000 5 10 1 1 0 0 1
 value=IRFZ 44N
 }
@@ -755,7 +755,7 @@ C 27900 37500 1 0 0 connector3-1.sym
 T 27900 38600 5 10 1 1 0 0 1
 refdes=Q1
 T 27900 37500 5 10 0 0 180 0 1
-footprint=TO-220_FLAT
+footprint=TO-220-1
 T 27900 37300 5 10 1 1 0 0 1
 value=IRFZ 44N
 }

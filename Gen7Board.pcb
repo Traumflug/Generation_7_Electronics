@@ -1,5 +1,5 @@
 # release: pcb 20100929
-# date:    Wed Jun  8 23:09:21 2011
+# date:    Sat Jun 11 09:01:53 2011
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -939,19 +939,6 @@ Element["" "RCY3mm5" "C6" "100_uF" 590600 180000 -5000 5000 0 100 ""]
 
 	)
 
-Element["" "LED3_1" "DEBUG_LED" "unknown" 387500 392500 -12500 8000 0 100 ""]
-(
-	Pin[0 -5000 6500 3000 7100 3000 "A" "1" ""]
-	Pin[0 5000 6500 3000 7100 3000 "K" "2" ""]
-	ElementLine [6500 -7000 6500 -3000 1000]
-	ElementLine [4500 -5000 8500 -5000 1000]
-	ElementArc [0 0 5900 5900 315 90 1000]
-	ElementArc [0 0 5900 5900 135 55 1000]
-	ElementArc [0 0 7900 7900 315 90 1000]
-	ElementArc [0 0 7900 7900 135 55 1000]
-
-	)
-
 Element["" "RCY2mm" "CT2" "10_uF" 225000 286100 -11700 9700 0 100 ""]
 (
 	Pin[0 -3900 6000 3000 6600 3000 "+" "1" ""]
@@ -1746,19 +1733,6 @@ Element["" "ACY100" "C11" "0.1_uF" 562500 170000 2000 -6000 1 100 ""]
 
 	)
 
-Element["" "ACY300_1" "R15" "1K" 377500 425000 -3000 5000 1 100 ""]
-(
-	Pin[0 15000 6000 2000 6500 3000 "1" "1" ""]
-	Pin[0 -15000 6000 2000 6500 3000 "2" "2" ""]
-	ElementLine [0 7500 0 15000 1000]
-	ElementLine [0 -15000 0 -7500 1000]
-	ElementLine [-4000 7500 4000 7500 1000]
-	ElementLine [-4000 -7500 4000 -7500 1000]
-	ElementLine [-4000 -7500 -4000 7500 1000]
-	ElementLine [4000 -7500 4000 7500 1000]
-
-	)
-
 Element["" "RCY3mm5" "C7" "100_uF" 265000 349400 -10600 600 0 100 ""]
 (
 	Pin[0 -6900 6000 3000 6600 3000 "+" "1" ""]
@@ -2064,7 +2038,7 @@ Layer(1 "solder")
 	Line[365000 450000 415000 450000 3000 3200 "clearline"]
 	Line[545000 397500 545000 367500 3000 3200 "clearline"]
 	Line[497500 385000 497500 370000 3000 3200 "clearline"]
-	Line[387500 397500 377500 407500 3000 3200 "clearline"]
+	Line[425000 422500 425000 417500 3000 3200 "clearline"]
 	Line[565000 277500 565000 297500 3000 3200 "clearline"]
 	Line[450000 422500 450000 447500 3000 3200 "clearline"]
 	Line[564941 492559 579941 492559 3000 3200 "clearline"]
@@ -2274,9 +2248,9 @@ Layer(1 "solder")
 	Line[530000 477500 517500 465000 3000 3200 "clearline"]
 	Line[591500 351000 591500 399000 5000 3200 "clearline"]
 	Line[350000 165000 350000 180000 7874 3200 "clearline"]
-	Line[402500 387500 387500 387500 3000 3200 "clearline"]
+	Line[415000 450000 427500 462500 3000 3200 "clearline"]
 	Line[530000 460000 540000 470000 3000 3200 "clearline"]
-	Line[377500 407500 377500 410000 3000 3200 "clearline"]
+	Line[330000 285000 382500 285000 3000 3200 "clearline"]
 	Line[410000 402500 425000 417500 3000 3200 "clearline"]
 	Line[517500 385000 517500 370000 3000 3200 "clearline"]
 	Line[360000 455000 410000 455000 3000 3200 "clearline"]
@@ -2402,9 +2376,6 @@ Layer(1 "solder")
 	Line[415000 422500 415000 417500 3000 3200 "clearline"]
 	Line[435000 427500 430000 422500 3000 3200 "clearline"]
 	Line[435000 462500 427500 462500 3000 3200 "clearline"]
-	Line[415000 450000 427500 462500 3000 3200 "clearline"]
-	Line[425000 422500 425000 417500 3000 3200 "clearline"]
-	Line[330000 285000 382500 285000 3000 3200 "clearline"]
 )
 Layer(2 "GND-sldr")
 (
@@ -2634,7 +2605,6 @@ NetList()
 		Connect("LED4-2")
 		Connect("Q1-3")
 		Connect("Q2-3")
-		Connect("R15-1")
 		Connect("R16-2")
 		Connect("RESET-1")
 		Connect("SERIAL-1")
@@ -2703,7 +2673,6 @@ NetList()
 	Net("unnamed_net9" "(unknown)")
 	(
 		Connect("CONN6-3")
-		Connect("DEBUG_LED-1")
 		Connect("U1-8")
 		Connect("X_MIN-1")
 	)
@@ -3074,11 +3043,6 @@ NetList()
 	(
 		Connect("CONN1-9")
 		Connect("J14-2")
-	)
-	Net("unnamed_net77" "(unknown)")
-	(
-		Connect("DEBUG_LED-2")
-		Connect("R15-2")
 	)
 	Net("Vheat" "(unknown)")
 	(

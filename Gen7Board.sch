@@ -1219,3 +1219,10 @@ device=Molex 4 Pin
 N 48000 34200 48000 34800 4
 N 48000 35700 48000 35900 4
 N 48000 35900 48400 35900 4
+T 51900 33400 9 24 1 0 0 1 6
+(c) 2011 Traumflug
+(c) 2010 Traumflug, Jacky2k
+
+Creative Commons BY-NC-SA 3.0 Licence
+
+http://reprap.org/wiki/Generation_7_Electronics

@@ -1,5 +1,5 @@
 # release: pcb 20100929
-# date:    Sat Jun 11 10:49:29 2011
+# date:    Tue Jun 14 17:46:21 2011
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -2493,7 +2493,7 @@ Layer(3 "Vcc-sldr")
 )
 Layer(4 "Text-sldr")
 (
-	Text[505000 317500 2 231 "RepRap        Gen7 v1.2" "clearline,auto"]
+	Text[530000 320000 2 297 "RepRap       Gen7 v1.3" "clearline,auto"]
 )
 Layer(5 "component")
 (
@@ -2519,16 +2519,16 @@ Layer(7 "unused")
 )
 Layer(8 "unused")
 (
-	Text[350000 335000 0 121 "(c) 2010 Traumflug, Jacky2k" ""]
-	Text[350000 342500 0 121 "for RepRap" ""]
-	Text[350000 355000 0 121 "http://reprap.org/wiki/Generation_7_Electronics" ""]
-	Text[457500 335000 0 121 "GNU public Licence v2" ""]
-	Text[227500 118500 0 143 "Extruder" ""]
-	Text[322500 118500 0 143 "Z-Axis" ""]
 	Text[415000 118500 0 143 "Y-Axis" ""]
 	Text[507500 118500 0 143 "X-Axis" ""]
 	Text[555000 480000 1 143 "Standby" ""]
 	Text[579000 499000 0 143 "+5 V" ""]
+	Text[227500 118500 0 143 "Extruder" ""]
+	Text[322500 118500 0 143 "Z-Axis" ""]
+	Text[135000 152500 3 121 "Creative Commons BY-NC-SA 3.0 Licence" ""]
+	Text[142500 300000 3 121 "(c) 2010 Traumflug, Jacky2k" ""]
+	Text[135000 300000 3 121 "http://reprap.org/wiki/Generation_7_Electronics" ""]
+	Text[150000 300000 3 121 "(c) 2011 Traumflug" ""]
 )
 NetList()
 (

@@ -1,5 +1,5 @@
 # release: pcb 20100929
-# date:    Thu Jun 16 00:00:50 2011
+# date:    Wed Jun 29 14:39:18 2011
 # user:    mah (Markus Hitter,,,)
 # host:    piccard
 
@@ -1212,7 +1212,7 @@ Element["" "ACY100" "C16" "0.1_uF" 475000 192500 -3000 19000 1 100 ""]
 
 	)
 
-Element["" "POLOLUSTEPPER-1" "U4" "unknown" 299941 230059 3000 -6500 2 100 ""]
+Element["" "POLOLUSTEPPER-1" "U4" "unknown" 299941 230059 -2882 6882 0 100 ""]
 (
 	Pin[10000 -50000 7000 2000 7600 4000 "GND2" "15" "edge2"]
 	Pin[0 -50000 7000 2000 7600 4000 "VMOT" "16" "edge2"]
@@ -1286,7 +1286,7 @@ Element["" "100-3-1" "Y_MIN" "unknown" 445000 472500 -10000 27500 0 100 ""]
 
 	)
 
-Element["" "POLOLUSTEPPER-1" "U2" "unknown" 484941 230059 4500 -7000 2 100 ""]
+Element["" "POLOLUSTEPPER-1" "U2" "unknown" 484941 230059 -2882 6882 0 100 ""]
 (
 	Pin[10000 -50000 7000 2000 7600 4000 "GND2" "15" "edge2"]
 	Pin[0 -50000 7000 2000 7600 4000 "VMOT" "16" "edge2"]
@@ -1311,7 +1311,7 @@ Element["" "POLOLUSTEPPER-1" "U2" "unknown" 484941 230059 4500 -7000 2 100 ""]
 
 	)
 
-Element["" "POLOLUSTEPPER-1" "U5" "unknown" 207500 230000 3000 -6000 2 100 ""]
+Element["" "POLOLUSTEPPER-1" "U5" "unknown" 207500 230000 -3000 7000 0 100 ""]
 (
 	Pin[10000 -50000 7000 2000 7600 4000 "GND2" "15" "edge2"]
 	Pin[0 -50000 7000 2000 7600 4000 "VMOT" "16" "edge2"]
@@ -1336,7 +1336,7 @@ Element["" "POLOLUSTEPPER-1" "U5" "unknown" 207500 230000 3000 -6000 2 100 ""]
 
 	)
 
-Element["" "POLOLUSTEPPER-1" "U3" "unknown" 392441 230059 2500 -6500 2 100 ""]
+Element["" "POLOLUSTEPPER-1" "U3" "unknown" 392441 230059 -2882 6882 0 100 ""]
 (
 	Pin[10000 -50000 7000 2000 7600 4000 "GND2" "15" "edge2,thermal(2X)"]
 	Pin[0 -50000 7000 2000 7600 4000 "VMOT" "16" "edge2"]

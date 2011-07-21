@@ -15,13 +15,13 @@ RELEASE="$1"
 BASE_DIR="${PWD}"
 DOC_DIR="${BASE_DIR}/release documents"
 
-# Reset to a clean state.
-rm -rf "${DOC_DIR}"
-mkdir -p "${DOC_DIR}"
-
 echo "Uncommitting old release ..."
 git rm "${DOC_DIR}"/* || exit 1
 echo "... done."
+
+# Reset to a clean state.
+rm -rf "${DOC_DIR}"
+mkdir -p "${DOC_DIR}"
 
 echo "Create Arduino IDE support ..."
 cd "arduino support"
@@ -81,7 +81,7 @@ done
 echo "... done."
 
 echo "Committing all the release files ..."
-git add "${DOC_DIR}"
+git add --force "${DOC_DIR}"
 git commit -m "Make Release ${RELEASE}."
 echo "... please enter release message - usually starts"
 echo "    with \"New features: ...\" ..."

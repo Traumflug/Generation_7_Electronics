@@ -691,7 +691,7 @@ int main(void)
 
                             address = address + 2;      // Select next word in memory
                             size -= 2;          // Reduce number of bytes to write by two
-                        } while(size);          // Loop until all bytes written
+                        } while(size && address <= APP_END); // Loop until all bytes written
 
                         boot_page_write(tempaddress);
                         boot_spm_busy_wait();

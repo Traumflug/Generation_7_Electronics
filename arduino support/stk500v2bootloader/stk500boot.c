@@ -367,7 +367,6 @@ int main(void) __attribute__ ((OS_main));
 int main(void)
 {
     address_t       address = 0;
-    address_t       eraseAddress = 0;
     parseState_t    msgParseState;
     unsigned int    i = 0;
     unsigned char   checksum = 0;
@@ -646,7 +645,12 @@ int main(void)
                 break;
 #endif
             case CMD_CHIP_ERASE_ISP:
-                eraseAddress = 0;
+                /*
+                 * Ignore that and erase pages as/when the replacement is
+                 * received. This strategy assumes packages to be sent in
+                 * memory page sized and page aligned chunks, but saves
+                 * quite a bit of upload time.
+                 */
                 msgLength = 2;
                 msgBuffer[1] = STATUS_CMD_OK;
                 break;
@@ -670,32 +674,30 @@ int main(void)
                     unsigned char highByte, lowByte;
                     address_t     tempaddress = address;
 
-
                     if ( msgBuffer[0] == CMD_PROGRAM_FLASH_ISP )
                     {
-                        // erase only main section (bootloader protection)
-                        if  (  eraseAddress < APP_END )
+                        // rewrite only in main section (bootloader protection)
+                        if  ( address < APP_END )
                         {
-                            boot_page_erase(eraseAddress);  // Perform page erase
-                            boot_spm_busy_wait();       // Wait until the memory is erased.
-                            eraseAddress += SPM_PAGESIZE;    // point to next page to be erase
+                            boot_page_erase(address); // Perform page erase
+                            boot_spm_busy_wait();     // Wait until the memory is erased.
+
+                            /* Write FLASH */
+                            do {
+                                lowByte   = *p++;
+                                highByte  = *p++;
+
+                                data =  (highByte << 8) | lowByte;
+                                boot_page_fill(address,data);
+
+                                address = address + 2; // Select next word in memory
+                                size -= 2;
+                            } while(size); // Loop until all bytes written
+
+                            boot_page_write(tempaddress);
+                            boot_spm_busy_wait();
+                            boot_rww_enable(); // Re-enable the RWW section
                         }
-
-                        /* Write FLASH */
-                        do {
-                            lowByte   = *p++;
-                            highByte  = *p++;
-
-                            data =  (highByte << 8) | lowByte;
-                            boot_page_fill(address,data);
-
-                            address = address + 2;      // Select next word in memory
-                            size -= 2;          // Reduce number of bytes to write by two
-                        } while(size && address <= APP_END); // Loop until all bytes written
-
-                        boot_page_write(tempaddress);
-                        boot_spm_busy_wait();
-                        boot_rww_enable();              // Re-enable the RWW section
                     }
                     else
                     {

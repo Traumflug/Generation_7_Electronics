@@ -7,23 +7,26 @@
   to work as well.
 
   All activities are commented over the serial line, so if
-  listen there at 9600 baud and can read clear text, your
+  you listen there at 9600 baud and can read clear text, your
   serial line works as well.
  
   This example code is in the public domain.
 */
 
 #define PSU_Pin 15
-#define HEATER_Pin 4
+#define HEATER_Pin 3
+#define BED_Pin 4
 
 void setup() {
   int i;
 
   Serial.begin(9600);
   pinMode(PSU_Pin, OUTPUT);
-  pinMode(HEATER_Pin, OUTPUT);     
+  pinMode(HEATER_Pin, OUTPUT);
+  pinMode(BED_Pin, OUTPUT);
   digitalWrite(PSU_Pin, HIGH);   // initial value, off
   digitalWrite(HEATER_Pin, LOW); // intiial value, off
+  digitalWrite(BED_Pin, LOW);    // always off
 
   // test procedure
   delay(5000);

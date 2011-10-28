@@ -70,7 +70,10 @@ extern "C"{
 #define max(a,b) ((a)>(b)?(a):(b))
 #define abs(x) ((x)>0?(x):-(x))
 #define constrain(amt,low,high) ((amt)<(low)?(low):((amt)>(high)?(high):(amt)))
-#define round(x)     ((x)>=0?(long)((x)+0.5):(long)((x)-0.5))
+#if __GNUC__ <= 4 && __GNUC_MINOR__ < 5
+	// this conflicts with avr-gcc's built in headers as of avr-gcc 4.5.3
+	#define round(x)     ((x)>=0?(long)((x)+0.5):(long)((x)-0.5))
+#endif
 #define radians(deg) ((deg)*DEG_TO_RAD)
 #define degrees(rad) ((rad)*RAD_TO_DEG)
 #define sq(x) ((x)*(x))

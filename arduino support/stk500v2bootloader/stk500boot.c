@@ -160,10 +160,6 @@ LICENSE:
  */
 #if defined (__AVR_ATmega8__)
     #define SIGNATURE_BYTES 0x1E9307
-#elif defined (__AVR_ATmega644__)
-    #define SIGNATURE_BYTES 0x1E9609
-#elif defined (__AVR_ATmega644P__)
-    #define SIGNATURE_BYTES 0x1E960A
 #elif defined (__AVR_ATmega16__)
     #define SIGNATURE_BYTES 0x1E9403
 #elif defined (__AVR_ATmega32__)
@@ -174,12 +170,24 @@ LICENSE:
     #define SIGNATURE_BYTES 0x1E9308
 #elif defined (__AVR_ATmega88__)
     #define SIGNATURE_BYTES 0x1E930A
+#elif defined (__AVR_ATmega128__)
+    #define SIGNATURE_BYTES 0x1E9702
 #elif defined (__AVR_ATmega162__)
     #define SIGNATURE_BYTES 0x1E9404
 #elif defined (__AVR_ATmega168__)
     #define SIGNATURE_BYTES 0x1E9406
-#elif defined (__AVR_ATmega128__)
-    #define SIGNATURE_BYTES 0x1E9702
+#elif defined (__AVR_ATmega644__)
+    #define SIGNATURE_BYTES 0x1E9609
+#elif defined (__AVR_ATmega644P__)
+    #define SIGNATURE_BYTES 0x1E960A
+#elif defined (__AVR_ATmega1280__)
+    #define SIGNATURE_BYTES 0x1E9703
+#elif defined (__AVR_ATmega1284P__)
+    #define SIGNATURE_BYTES 0x1E9705
+#elif defined (__AVR_ATmega2560__)
+    #define SIGNATURE_BYTES 0x1E9801
+#elif defined (__AVR_ATmega2561__)
+    #define SIGNATURE_BYTES 0x1e9802
 #elif defined (__AVR_AT90CAN32__)
     #define SIGNATURE_BYTES 0x1E9581
 #elif defined (__AVR_AT90CAN64__)
@@ -194,8 +202,9 @@ LICENSE:
 /*
  *  Defines for the various USART registers
  */
-#if  defined(__AVR_ATmega8__)    || defined(__AVR_ATmega16__) || defined(__AVR_ATmega32__) \
-  || defined(__AVR_ATmega8515__) || defined(__AVR_ATmega8535__)
+#if  defined(__AVR_ATmega8__)     || defined(__AVR_ATmega16__)    || \
+     defined(__AVR_ATmega32__)    || defined(__AVR_ATmega8515__)  || \
+     defined(__AVR_ATmega8535__)
 /*
  * ATMega with one USART
  */
@@ -209,11 +218,13 @@ LICENSE:
 #define UART_DATA_REG            UDR
 #define UART_DOUBLE_SPEED        U2X
 
-#elif  defined(__AVR_ATmega64__) || defined(__AVR_ATmega128__) || \
-       defined(__AVR_ATmega162__) || defined(__AVR_ATmega88__) || \
-       defined(__AVR_ATmega168__) || defined(__AVR_AT90CAN32__) || \
-       defined(__AVR_AT90CAN64__) || defined(__AVR_AT90CAN128__) || \
-       defined(__AVR_ATmega644P__) || defined(__AVR_ATmega644__)
+#elif  defined(__AVR_ATmega64__)    || defined(__AVR_ATmega128__)   || \
+       defined(__AVR_ATmega162__)   || defined(__AVR_ATmega168__)   || \
+       defined(__AVR_ATmega644__)   || defined(__AVR_ATmega644P__)  || \
+       defined(__AVR_ATmega1280__)  || defined(__AVR_ATmega1284P__) || \
+       defined(__AVR_ATmega2560__)  || defined(__AVR_ATmega2561__)  || \
+       defined(__AVR_AT90CAN32__)   || defined(__AVR_AT90CAN64__)   || \
+       defined(__AVR_AT90CAN128__)
 /*
  *  ATMega with two USART, select USART for bootloader using USE_USART1 define
  */

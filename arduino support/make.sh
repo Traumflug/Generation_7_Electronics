@@ -36,6 +36,14 @@ mv "${FLEURY_DIR}/stk500boot.hex" "${BOOTLOADERS_DIR}/bootloader-644P-16MHz.hex"
 mv "${FLEURY_DIR}/stk500boot.hex" "${BOOTLOADERS_DIR}/bootloader-644P-20MHz.hex"
 (cd "${FLEURY_DIR}" && make clean)
 
+(cd "${FLEURY_DIR}" && make MCU=atmega1284p F_CPU=16000000)
+mv "${FLEURY_DIR}/stk500boot.hex" "${BOOTLOADERS_DIR}/bootloader-1284P-16MHz.hex"
+(cd "${FLEURY_DIR}" && make clean)
+
+(cd "${FLEURY_DIR}" && make MCU=atmega1284p F_CPU=20000000)
+mv "${FLEURY_DIR}/stk500boot.hex" "${BOOTLOADERS_DIR}/bootloader-1284P-20MHz.hex"
+(cd "${FLEURY_DIR}" && make clean)
+
 # Package and clean up.
 zip -r9 "${DIST_DIR}.zip" "${DIST_DIR}"
 rm -rf "${DIST_DIR}"

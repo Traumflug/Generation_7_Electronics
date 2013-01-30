@@ -133,7 +133,7 @@ LICENSE:
 /*
  *  Enable (1) or disable (0) USART double speed operation
  */
-#define UART_BAUDRATE_DOUBLE_SPEED 0
+#define UART_BAUDRATE_DOUBLE_SPEED 1
 
 
 /*

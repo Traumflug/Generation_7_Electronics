@@ -19,160 +19,222 @@
  Modified 23 November 2006 by David A. Mellis
  */
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <inttypes.h>
 #include <math.h>
-#include "wiring.h"
+#include "Arduino.h"
 
 #include "Print.h"
 
 // Public Methods //////////////////////////////////////////////////////////////
 
-void Print::print(uint8_t b)
+/* default implementation: may be overridden */
+size_t Print::write(const uint8_t *buffer, size_t size)
 {
-  this->write(b);
-}
-
-void Print::print(char c)
-{
-  print((byte) c);
-}
-
-void Print::print(const char c[])
-{
-  while (*c)
-    print(*c++);
-}
-
-void Print::print(int n)
-{
-  print((long) n);
-}
-
-void Print::print(unsigned int n)
-{
-  print((unsigned long) n);
-}
-
-void Print::print(long n)
-{
-  if (n < 0) {
-    print('-');
-    n = -n;
+  size_t n = 0;
+  while (size--) {
+    n += write(*buffer++);
   }
-  printNumber(n, 10);
+  return n;
 }
 
-void Print::print(unsigned long n)
+size_t Print::print(const __FlashStringHelper *ifsh)
 {
-  printNumber(n, 10);
+  const char PROGMEM *p = (const char PROGMEM *)ifsh;
+  size_t n = 0;
+  while (1) {
+    unsigned char c = pgm_read_byte(p++);
+    if (c == 0) break;
+    n += write(c);
+  }
+  return n;
 }
 
-void Print::print(long n, int base)
+size_t Print::print(const String &s)
 {
-  if (base == 0)
-    print((char) n);
-  else if (base == 10)
-    print(n);
-  else
-    printNumber(n, base);
+  size_t n = 0;
+  for (uint16_t i = 0; i < s.length(); i++) {
+    n += write(s[i]);
+  }
+  return n;
 }
 
-void Print::print(double n)
+size_t Print::print(const char str[])
 {
-  printFloat(n, 2);
+  return write(str);
 }
 
-void Print::println(void)
+size_t Print::print(char c)
 {
-  print('\r');
-  print('\n');  
+  return write(c);
 }
 
-void Print::println(char c)
+size_t Print::print(unsigned char b, int base)
 {
-  print(c);
-  println();  
+  return print((unsigned long) b, base);
 }
 
-void Print::println(const char c[])
+size_t Print::print(int n, int base)
 {
-  print(c);
-  println();
+  return print((long) n, base);
 }
 
-void Print::println(uint8_t b)
+size_t Print::print(unsigned int n, int base)
 {
-  print(b);
-  println();
+  return print((unsigned long) n, base);
 }
 
-void Print::println(int n)
+size_t Print::print(long n, int base)
 {
-  print(n);
-  println();
+  if (base == 0) {
+    return write(n);
+  } else if (base == 10) {
+    if (n < 0) {
+      int t = print('-');
+      n = -n;
+      return printNumber(n, 10) + t;
+    }
+    return printNumber(n, 10);
+  } else {
+    return printNumber(n, base);
+  }
 }
 
-void Print::println(unsigned int n)
+size_t Print::print(unsigned long n, int base)
 {
-  print(n);
-  println();
+  if (base == 0) return write(n);
+  else return printNumber(n, base);
 }
 
-void Print::println(long n)
+size_t Print::print(double n, int digits)
 {
-  print(n);
-  println();  
+  return printFloat(n, digits);
 }
 
-void Print::println(unsigned long n)
+size_t Print::println(const __FlashStringHelper *ifsh)
 {
-  print(n);
-  println();  
+  size_t n = print(ifsh);
+  n += println();
+  return n;
 }
 
-void Print::println(long n, int base)
+size_t Print::print(const Printable& x)
 {
-  print(n, base);
-  println();
+  return x.printTo(*this);
 }
 
-void Print::println(double n)
+size_t Print::println(void)
 {
-  print(n);
-  println();
+  size_t n = print('\r');
+  n += print('\n');
+  return n;
+}
+
+size_t Print::println(const String &s)
+{
+  size_t n = print(s);
+  n += println();
+  return n;
+}
+
+size_t Print::println(const char c[])
+{
+  size_t n = print(c);
+  n += println();
+  return n;
+}
+
+size_t Print::println(char c)
+{
+  size_t n = print(c);
+  n += println();
+  return n;
+}
+
+size_t Print::println(unsigned char b, int base)
+{
+  size_t n = print(b, base);
+  n += println();
+  return n;
+}
+
+size_t Print::println(int num, int base)
+{
+  size_t n = print(num, base);
+  n += println();
+  return n;
+}
+
+size_t Print::println(unsigned int num, int base)
+{
+  size_t n = print(num, base);
+  n += println();
+  return n;
+}
+
+size_t Print::println(long num, int base)
+{
+  size_t n = print(num, base);
+  n += println();
+  return n;
+}
+
+size_t Print::println(unsigned long num, int base)
+{
+  size_t n = print(num, base);
+  n += println();
+  return n;
+}
+
+size_t Print::println(double num, int digits)
+{
+  size_t n = print(num, digits);
+  n += println();
+  return n;
+}
+
+size_t Print::println(const Printable& x)
+{
+  size_t n = print(x);
+  n += println();
+  return n;
 }
 
 // Private Methods /////////////////////////////////////////////////////////////
 
-void Print::printNumber(unsigned long n, uint8_t base)
-{
-  unsigned char buf[8 * sizeof(long)]; // Assumes 8-bit chars. 
-  unsigned long i = 0;
+size_t Print::printNumber(unsigned long n, uint8_t base) {
+  char buf[8 * sizeof(long) + 1]; // Assumes 8-bit chars plus zero byte.
+  char *str = &buf[sizeof(buf) - 1];
 
-  if (n == 0) {
-    print('0');
-    return;
-  } 
+  *str = '\0';
 
-  while (n > 0) {
-    buf[i++] = n % base;
+  // prevent crash if called with base == 1
+  if (base < 2) base = 10;
+
+  do {
+    unsigned long m = n;
     n /= base;
-  }
+    char c = m - base * n;
+    *--str = c < 10 ? c + '0' : c + 'A' - 10;
+  } while(n);
 
-  for (; i > 0; i--)
-    print((char) (buf[i - 1] < 10 ?
-      '0' + buf[i - 1] :
-      'A' + buf[i - 1] - 10));
+  return write(str);
 }
 
-void Print::printFloat(double number, uint8_t digits) 
+size_t Print::printFloat(double number, uint8_t digits) 
 { 
+  size_t n = 0;
+  
+  if (isnan(number)) return print("nan");
+  if (isinf(number)) return print("inf");
+  if (number > 4294967040.0) return print ("ovf");  // constant determined empirically
+  if (number <-4294967040.0) return print ("ovf");  // constant determined empirically
+  
   // Handle negative numbers
   if (number < 0.0)
   {
-     print('-');
+     n += print('-');
      number = -number;
   }
 
@@ -186,18 +248,21 @@ void Print::printFloat(double number, uint8_t digits)
   // Extract the integer part of the number and print it
   unsigned long int_part = (unsigned long)number;
   double remainder = number - (double)int_part;
-  print(int_part);
+  n += print(int_part);
 
   // Print the decimal point, but only if there are digits beyond
-  if (digits > 0)
-    print("."); 
+  if (digits > 0) {
+    n += print("."); 
+  }
 
   // Extract digits from the remainder one at a time
   while (digits-- > 0)
   {
     remainder *= 10.0;
     int toPrint = int(remainder);
-    print(toPrint);
+    n += print(toPrint);
     remainder -= toPrint; 
   } 
+  
+  return n;
 }

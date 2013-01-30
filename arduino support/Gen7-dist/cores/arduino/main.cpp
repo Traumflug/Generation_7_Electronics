@@ -1,13 +1,19 @@
-#include <WProgram.h>
+#include <Arduino.h>
 
 int main(void)
 {
 	init();
 
+#if defined(USBCON)
+	USBDevice.attach();
+#endif
+	
 	setup();
     
-	for (;;)
+	for (;;) {
 		loop();
+		if (serialEventRun) serialEventRun();
+	}
         
 	return 0;
 }

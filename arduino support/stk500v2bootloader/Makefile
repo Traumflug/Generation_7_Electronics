@@ -52,9 +52,18 @@ F_CPU = 20000000
 # chip's data sheet. It's the lower value in the "Boot Loader Flash Section"
 # and must be multiplied by 2, as the numbers in these tables are word sized.
 # 0x0e00*2=0x1C00 for ATmega8  512 words Boot Size
-# ATmega644(P),  512 words boot size: FC00
-# ATmega644(P), 1024 words boot size: F800
-BOOTLOADER_ADDRESS = F800
+# ATmega644(P),  512 words boot size:  FC00
+# ATmega644(P), 1024 words boot size:  F800
+# ATmega1284P,  1024 words boot size: 1F800
+ifeq ($(MCU), atmega644)
+  BOOTLOADER_ADDRESS =  F800
+endif
+ifeq ($(MCU), atmega644p)
+  BOOTLOADER_ADDRESS =  F800
+endif
+ifeq ($(MCU), atmega1284p)
+  BOOTLOADER_ADDRESS = 1F800
+endif
 
 
 # Output format. (can be srec, ihex, binary)

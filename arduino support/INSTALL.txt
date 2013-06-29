@@ -25,6 +25,20 @@ is pretty easy.
 5. You're done. Compile and upload firmware as if Gen7 were an Arduino.
 
 
+Compatibility List
+
+The following version combinations were tested:
+
+  Gen7 Support          Arduino IDE
+
+  v2.1                  1.0.3
+
+  v2.0                  1.0
+                        1.0.1
+
+  v1.0                  0023
+                        0018
+
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public

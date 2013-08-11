@@ -1,0 +1,48 @@
+
+How to make a Generation 7 Electronics Release.
+
+Each part of Gen7 (Board, Endstop, etc.) gets its own release numbering.
+
+
+1. Make the local Git repository ready. This should commit everything
+   meant to go into the release and moving everything else away from the
+   master branch.
+
+2. Test this. That's obvious.
+
+3. tools/make-release.sh
+
+   This also tags the release with a trusted certificate, which is currently
+   only available in Traumflug's local Home directory.
+
+   As the tag description (an editor will open), use the list of new features
+   wiki page.
+
+4. Document the new release on
+   http://reprap.org/wiki/Generation_7_Electronics
+   in the appropriate section (Board, Endstop, Extension Board, ...)
+
+   This typically means adding the links to Github and the release date to
+   the already existing list of new features. For non-bugfix releases, move
+   the list if the previous release to the history section and start a new
+   "Plans for <next release>" list.
+
+5. Use the wiki's move function to move the old endstop and board wiki page
+   to the new version. Either edit the old page to have a short description
+   on why the page is empty (Example: http://reprap.org/wiki/Gen7_Endstop_1.2)
+   or copy all the contents back from the new page.
+
+6. Edit one of the pages to find the edit for the templates "Gen7Endstop",
+   "Gen7Board-AVR", "Gen7Board-ARM" and "Generation7Electronics". On bugfix
+   releases, always include only the last bugfix version.
+
+7. Edit the "Individual Components" section of the main page to link to the
+   new versions. This is
+   http://reprap.org/wiki/Generation_7_Electronics#Individual_Components
+
+8. Start reviewing the new Board and Endstop pages ...
+
+
+
+(c) Markus "Traumflug" Hitter 2011
+

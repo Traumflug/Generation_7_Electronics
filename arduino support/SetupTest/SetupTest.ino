@@ -33,7 +33,7 @@ void setup() {
   Serial.print("turning PSU on\n");
   digitalWrite(PSU_Pin, LOW);
 
-  for (i = 0; i < 10; i++) {
+  for (i = 0; i < 5; i++) {
     Serial.print("LED on\n");
     digitalWrite(HEATER_Pin, HIGH);
     delay(600);
@@ -47,8 +47,22 @@ void setup() {
 }
 
 void loop() {
-  Serial.print("ATmega is idle\n");
-  delay(1000);
+  static int i = 0;
+  
+  delay(10);
+  i++;
+
+  if (i > 99) {
+    i = 0;
+    Serial.print("ATmega is idle\n");
+  }
+
+  if (Serial.available() > 0) {
+    i = 0;
+    Serial.print("received <");
+    Serial.write(Serial.read());
+    Serial.print(">\n");
+  }
 }
 
 

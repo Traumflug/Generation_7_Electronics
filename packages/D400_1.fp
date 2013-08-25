@@ -1,0 +1,11 @@
+Element(0x00 "Axial diode" "D?" "" 87 -66 0 100 0x00)
+(
+	Pin( 200 0 80 40 "1" 0x01)
+	Pin(-200 0 80 40 "2" 0x01)
+	ElementLine(-200 0 -67 0 10)
+	ElementLine(67 0 200 0 10)
+	ElementLine(-67 0 67 -66 10)
+	ElementLine(67 -66 67 66 10)
+	ElementLine(67 66 -67 0 10)
+	ElementLine(-67 -66 -67 66 10)
+)

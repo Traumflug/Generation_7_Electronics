@@ -1,0 +1,104 @@
+
+This is a userspace driver for connecting USB-Serial adapters. It's current
+intention is to allow devices using Microchip's MCP2200 USB-UART bridge on
+Mac OS X prior to v10.7. Generation 7 Electronics happens to use this chip.
+
+Linux, MS Windows and Mac OS X as of v10.7 are known to support this chip
+natively. On these, there's no need to use this tool, just connect to the
+device appearing automatically.
+
+"Userspace" means, it doesn't require root privileges. It also means it isn't
+a kernel extension, so it doesn't kick in automatically when such a MCP2200-
+equipped device gets connected. Instead, you have to run the tool from command
+line, like:
+
+  ./mcp2200-forwarder
+
+This will report a "terminal name", e.g. /dev/ttyp3. Then you can connect to
+this file with your serial terminal or G-code sending host the same way you'd
+connect to an automatically appearing device. For more options, run the
+tool with "-h".
+
+
+Caveats
+
+ - Serial line isn't reset when a sending host connects, but only when the
+   tool starts. In case you try to upload a firmware using auto-reset, try
+   to launch this tool just before the client.
+
+ - Baud rate settings in sending hosts have no longer a meaning, any setting
+   works. To change baud rate on the serial line, restart this tool with the
+   appropriate -b argument.
+
+ - Actually an advantage: this tool has fewer hiccups than the driver coming
+   with FT232 chips. While a connected FT232 adapter would wake my iBook G3
+   a few minutes after being set to sleep, the MCP2200 shows no such signs,
+   with or without this tool running. It's no longer neccessary to remember
+   to unplug the Gen7 before walking away.
+
+ - There is another buffer in the line now. Don't be surprised when your
+   sending host receives data when connecting which was sent by the contoller
+   long before. Restarting this tool drains all buffers.
+
+
+Installation
+
+No installation required, just place mcp2200-forwarder anywhere convenient.
+
+
+Building
+
+Building the tool requires the usual stuff like make, gcc and such. Installing
+Xcode gives you all of this. Then:
+
+  cd mcp2200-forwarder
+  make
+
+That's it!
+
+
+Technical background
+
+Actually, earlier Mac OS Xs support USB-Serial devices using CDC-ACM, like the
+MCP2200 does, just fine. If you look at your hardware descriptions (on 10.4.10:
+Apple Menu -> About this Mac -> More Information -> Hardware -> USB), you'll
+actually see this chip connected. Just the appropriate entry in /dev is
+missing. The reason is, Mac OS X prior to v10.7 didn't support a protocol named
+"IAD", which the MCP2200 happens to use to provide it's assortment of functions
+(USB-Serial is just one of them).
+
+The solution is to search connected USB devices manually to pick out the right
+one by Vendor ID and Product ID (both hardcoded). Then search its interfaces
+to find the one for the USB-UART bridge. Quite a bit or work, but Apple sample
+code does almost the same, so it's more a matter of adjusting of what's already
+there. Sample code was taken from "USB Device Interface Guide":
+
+  https://developer.apple.com/library/mac/documentation/devicedrivers/
+          conceptual/usbbook/workingwithusb.pdf
+
+
+FAQ:
+
+There's libusb, why not use this?
+
+Yes, there's libusb and actually I tried hard to get a tool using it working.
+While code was quite a bit smaller, the result was pretty unreliable. Character
+drops all the time, at random points. Sometimes it worked fine, sometimes it
+didn't. Random behaviour is no fun and hard to debug. Apple sample code worked
+pretty soon and now also supports dis- and re-connecting USB while the tool is
+running.
+
+How to sniff USB (a bit off-topic for this README)
+
+When USB devices don't work the way you'd like them to work, it's a good idea
+to look at the data on the USB bus. On (Ubuntu-)Linux, that's actually simple:
+
+  lsusb  # Find and remember bus number of the device in question
+  sudo -s
+  modprobe usbmon
+  cd /sys/kernel/debug/usbmon
+  cat <bus number>u  # e.g. cat 4u
+
+That's it, detail instructions here:
+
+  https://www.kernel.org/doc/Documentation/usb/usbmon.txt

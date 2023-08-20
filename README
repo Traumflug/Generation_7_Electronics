@@ -1,3 +1,10 @@
+Archiving hint: In late summer 2023, Github started to enforce 2FA (Two Factor
+                Authentication), so I had to archive it before losing control
+                over it.  See also https://github.com/Traumflug/Generation_7_Electronics/issues/28
+
+                Traumflug, August 2023
+
+
 Design Goals
 
  * PCB easily to manufacture on a RepRap.
